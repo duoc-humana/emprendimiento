@@ -15,12 +15,18 @@ function reciclados_enqueue_assets() {
         array() // Orden de carga, opcional si existe alguna dependencia.
         
     ); 
+     wp_enqueue_style(
+        'iconos', // Nombre identificativo (ID) debe ser unico.
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', // URL, en este caso el link del CDN de Bootstrap.
+        array() // Orden de carga, opcional si existe alguna dependencia.
+        
+    ); 
 
     /* CSS Principal + Bootstrap */
     wp_enqueue_style (
         'estilo', // Nombre identificativo (ID) debe ser unico.
         get_template_directory_uri() . '/assets/scss/mi-estilo.css', // URL, en este caso la ubicacion del archivo .css
-        array('bootstrap-header', 'swiper'), // Orden de carga, opcional si existe alguna dependencia, en este caso al usar Boostrap el css dependera de Bootstrap, es decir que nuestro css se cargara despues de Boostrap.
+        array('bootstrap-header', 'swiper', 'iconos'), // Orden de carga, opcional si existe alguna dependencia, en este caso al usar Boostrap el css dependera de Bootstrap, es decir que nuestro css se cargara despues de Boostrap.
         '1.0' // Version, en este caso es la version de nuestro css pero es completamente opcional.
     );
 
@@ -34,14 +40,14 @@ function reciclados_enqueue_assets() {
         'bootstrap-footer', 
         'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js', 
         array('jquery'), 
-        '5.3.7', 
+        '5.3.8', 
         true // Carga al final del body
     );
      wp_enqueue_script(
         'swiper-footer', 
         'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', 
         array('jquery'),  
-        '11.0',            
+        '1.0',            
         true               // carga en el footer
     );
      
