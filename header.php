@@ -31,8 +31,6 @@
 
         <div class="nav-right">
             
-            <!--Menú hamburguesa-->
-            <div class="hamburger">
                  <?php
                         wp_nav_menu(array(
                             'theme_location' => 'menu-principal',
@@ -44,6 +42,13 @@
                             'walker' => new bootstrap_5_wp_nav_menu_walker()
                         ));
                         ?>
+        
+
+            <!--Menú hamburguesa-->
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
