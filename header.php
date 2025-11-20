@@ -30,7 +30,7 @@
         </div>
 
         <div class="nav-right">
-            <ul class="nav-menu">
+           
                  <?php
                         wp_nav_menu(array(
                             'theme_location' => 'menu-principal',
@@ -42,7 +42,7 @@
                             'walker' => new bootstrap_5_wp_nav_menu_walker()
                         ));
                         ?>
-            </ul>
+        
 
             <!--Menú hamburguesa-->
             <div class="hamburger">
