@@ -17,7 +17,7 @@
         </div>
 
         <div class="header-right">
-            <a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i></a>
+            <a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #000;"></i></a>
             <div class="search-container">
                 <input type="text" class="search-input" placeholder="Buscar...">
             </div>
