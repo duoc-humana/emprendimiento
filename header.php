@@ -19,7 +19,7 @@
 
     <div class="header-right">
         <a href="<?php echo home_url('/carrito'); ?>">
-            <i class="fa-solid fa-cart-shopping fa-xl" style="color: #000;"></i>
+            <i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
         </a>
 
         <div class="search-container">
