@@ -1,33 +1,70 @@
 <?php
-/**
- * Enqueue de estilos y scripts del tema
- */
 
-function mi_tema_enqueue_assets() {
+function reciclados_enqueue_assets() {
 
-    // Bootstrap CSS
-    wp_enqueue_style('bootstrap-css', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css', array(), '5.3.8');
+    /* Bootstrap CSS (CDN) */
+    wp_enqueue_style(
+        'bootstrap-header', // Nombre identificativo (ID) debe ser unico.
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css', // URL, en este caso el link del CDN de Bootstrap.
+        array(), // Orden de carga, opcional si existe alguna dependencia.
+        '5.3.7' // Version, en este caso la version de la libreria de Bootstrap.
+    ); 
+    wp_enqueue_style(
+        'swiper', // Nombre identificativo (ID) debe ser unico.
+        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', // URL, en este caso el link del CDN de Bootstrap.
+        array() // Orden de carga, opcional si existe alguna dependencia.
+        
+    ); 
+     wp_enqueue_style(
+        'iconos', // Nombre identificativo (ID) debe ser unico.
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', // URL, en este caso el link del CDN de Bootstrap.
+        array() // Orden de carga, opcional si existe alguna dependencia.
+        
+    ); 
 
-    // Swiper CSS
-    wp_enqueue_style('swiper-css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '11');
+    /* CSS Principal + Bootstrap */
+    wp_enqueue_style (
+        'estilo', // Nombre identificativo (ID) debe ser unico.
+        get_template_directory_uri() . '/assets/scss/mi-estilo.css', // URL, en este caso la ubicacion del archivo .css
+        array('bootstrap-header', 'swiper', 'iconos'), // Orden de carga, opcional si existe alguna dependencia, en este caso al usar Boostrap el css dependera de Bootstrap, es decir que nuestro css se cargara despues de Boostrap.
+        '1.0' // Version, en este caso es la version de nuestro css pero es completamente opcional.
+    );
 
-    // Font Awesome
-    wp_enqueue_style('fontawesome-css', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css', array(), '6.4.0');
 
-    // CSS principal del tema
-    wp_enqueue_style('theme-style', get_template_directory_uri() . '/assets/scss/mi-estilo.css', array('bootstrap-css', 'swiper-css', 'fontawesome-css'), '1.0');
-
-    // jQuery (incluido en WP)
+    /* # Ejemplos Scripts # */
+    /* jQuery (ya incluido en WP) */
     wp_enqueue_script('jquery');
 
-    // Bootstrap JS
-    wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js', array('jquery'), '5.3.8', true);
+    /* Bootstrap JS */
+    wp_enqueue_script(
+        'bootstrap-footer', 
+        'https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js', 
+        array('jquery'), 
+        '5.3.8', 
+        true // Carga al final del body
+    );
+     wp_enqueue_script(
+        'swiper-footer', 
+        'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', 
+        array('jquery'),  
+        '1.0',            
+        true               // carga en el footer
+    );
+     
+       wp_register_script(
+        'script',
+        get_template_directory_uri() . '/assets/js/script.js',
+        array('jquery', 'bootstrap-footer', 'swiper-footer'),
+        '1.0',
+        true
+    );
 
-    // Swiper JS
-    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array('jquery'), '11', true);
+    
 
-    // JS del tema
-    wp_enqueue_script('theme-js', get_template_directory_uri() . '/assets/js/script.js', array('jquery', 'bootstrap-js', 'swiper-js'), '1.0', true);
+    wp_enqueue_script('script');
 
 }
-add_action('wp_enqueue_scripts', 'mi_tema_enqueue_assets');
+add_action('wp_enqueue_scripts', 'reciclados_enqueue_assets');
+
+
+?>
