@@ -4,56 +4,48 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title(); ?></title>
+    <title><?php wp_title('|', true, 'right'); ?></title>
+
     <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-
-<header class="header">
-    <div class="header-left d-flex justify-content-center">
-        <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
-        <i class="fa-brands fa-facebook fa-xl ms-2" style="color: #ffffff;"></i>
-    </div>
-
-    <div class="header-right">
-        <a href="<?php echo home_url('/carrito'); ?>">
-            <i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i>
-        </a>
-
-        <div class="search-container">
-            <input type="text" class="search-input" placeholder="Buscar...">
+    <header class="header d-flex justify-content-between align-items-center p-2">
+        <div class="header-left d-flex">
+            <a href="#"><i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i></a>
+            <a href="#" class="ms-2"><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i></a>
         </div>
 
-        <i class="fa-solid fa-magnifying-glass fa-xl search-btn punto" style="color: #ffffff;"></i>
-    </div>
-</header>
-
-<nav class="navbar">
-    <div class="nav-left">
-        <a href="<?php echo home_url('/'); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoheader.png" alt="Logo" class="logo">
-        </a>
-    </div>
-
-    <div class="nav-right">
-        <?php
-        wp_nav_menu(array(
-            'theme_location' => 'menu-principal',
-            'container' => false,
-            'menu_class' => '',
-            'fallback_cb' => false,
-            'items_wrap' => '<ul class="navbar-nav me-auto mb-2 mb-md-0">%3$s</ul>',
-            'depth' => 2,
-            'walker' => new bootstrap_5_wp_nav_menu_walker()
-        ));
-        ?>
-
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="header-right d-flex align-items-center">
+            <a href="<?php echo esc_url(home_url('/carrito')); ?>"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i></a>
+            <div class="search-container ms-3">
+                <?php get_search_form(); ?>
+            </div>
         </div>
-    </div>
-</nav>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoheader.png" alt="Logo" class="logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="<?php esc_attr_e('Toggle navigation', 'mi-tema'); ?>">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'menu-principal',
+                        'container' => false,
+                        'menu_class' => 'navbar-nav ms-auto mb-2 mb-lg-0',
+                        'fallback_cb' => '__return_false',
+                        'depth' => 2,
+                        'walker' => new bootstrap_5_wp_nav_menu_walker()
+                    ));
+                ?>
+            </div>
+        </div>
+    </nav>

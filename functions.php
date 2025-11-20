@@ -4,18 +4,12 @@
  */
 
 // =========================
-//  CARGA DE ARCHIVOS INTERNOS
-// =========================
-
-require_once get_template_directory() . '/includes/enqueue.php'; // estilos y scripts
-
-
-// =========================
 //  SOPORTES DEL TEMA
 // =========================
 
 add_theme_support('post-thumbnails');
-
+add_theme_support('title-tag'); // Permite que WP gestione el <title>
+add_theme_support('automatic-feed-links');
 
 // =========================
 //  REGISTRO DE MENÚS
@@ -27,7 +21,6 @@ function mi_tema_registrar_menus() {
     ));
 }
 add_action('after_setup_theme', 'mi_tema_registrar_menus');
-
 
 // =========================
 //  WALKER COMPATIBLE BOOTSTRAP 5
@@ -53,8 +46,6 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu {
     public function start_lvl(&$output, $depth = 0, $args = null) {
         $indent = str_repeat("\t", $depth);
         $submenu = ($depth > 0) ? ' sub-menu' : '';
-
-        $dropdown_menu_class[] = '';
         $output .= "\n$indent<ul class=\"dropdown-menu$submenu depth_$depth\">\n";
     }
 
@@ -66,25 +57,22 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu {
     public function start_el(&$output, $item, $depth = 0, $args = null, $id = 0) {
 
         $indent = ($depth) ? str_repeat("\t", $depth) : '';
-
         $classes = empty($item->classes) ? [] : (array)$item->classes;
         $classes[] = 'nav-item';
 
-        if ($args->has_children) {
+        if (!empty($args->has_children)) {
             $classes[] = 'dropdown';
         }
 
         $class_names = ' class="' . esc_attr(implode(' ', array_filter($classes))) . '"';
+        $id_attr = ' id="menu-item-' . esc_attr($item->ID) . '"';
 
-        $id = 'menu-item-' . $item->ID;
-        $id = ' id="' . esc_attr($id) . '"';
-
-        $output .= $indent . '<li' . $id . $class_names . '>';
+        $output .= $indent . '<li' . $id_attr . $class_names . '>';
 
         $atts = [];
-        $atts['class'] = $args->has_children ? 'nav-link dropdown-toggle' : 'nav-link';
-        $atts['href']  = !empty($item->url) ? $item->url : '';
-        if ($args->has_children) {
+        $atts['class'] = (!empty($args->has_children)) ? 'nav-link dropdown-toggle' : 'nav-link';
+        $atts['href'] = !empty($item->url) ? $item->url : '#';
+        if (!empty($args->has_children)) {
             $atts['data-bs-toggle'] = 'dropdown';
             $atts['aria-haspopup'] = 'true';
             $atts['aria-expanded'] = 'false';
@@ -111,13 +99,10 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu {
     }
 
     public function display_element($element, &$children_elements, $max_depth, $depth, $args, &$output) {
-
         $id_field = $this->db_fields['id'];
-
         if (is_object($args[0])) {
             $args[0]->has_children = !empty($children_elements[$element->$id_field]);
         }
-
         parent::display_element($element, $children_elements, $max_depth, $depth, $args, $output);
     }
 }
