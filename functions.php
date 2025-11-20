@@ -17,7 +17,7 @@ add_theme_support('automatic-feed-links');
 
 function mi_tema_registrar_menus() {
     register_nav_menus(array(
-        'menu-principal' => __('Menú Principal', 'mi-tema'),
+        'menu-principal' => __('Menú Principal', 'recicla'),
     ));
 }
 add_action('after_setup_theme', 'mi_tema_registrar_menus');
