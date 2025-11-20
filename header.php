@@ -66,32 +66,3 @@
         <i class="fa-solid fa-magnifying-glass fa-xl search-btn punto" style="color: #ffffff;"></i>
     </div>
 </header>
-
-<nav class="navbar">
-    <div class="nav-left">
-        <a href="<?php echo home_url('/'); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoheader.png" alt="Logo" class="logo">
-        </a>
-    </div>
-
-    <div class="nav-right">
-        <?php
-        wp_nav_menu(array(
-            'theme_location' => 'menu-principal',
-            'container' => false,
-            'menu_class' => '',
-            'fallback_cb' => false,
-            'items_wrap' => '<ul class="navbar-nav me-auto mb-2 mb-md-0">%3$s</ul>',
-            'depth' => 2,
-            'walker' => new bootstrap_5_wp_nav_menu_walker()
-        ));
-        ?>
-
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-    </div>
-</nav>
