@@ -27,4 +27,5 @@ const swiper = new Swiper(".mySwiper", {
         delay: 0,
         disableOnInteraction: false,
     },
+     watchOverflow: true,
 });
