@@ -24,3 +24,11 @@ serviciosLink.addEventListener('click', (e) => {
         serviciosDropdown.classList.toggle('open');
     }
 });
+
+/* footer */
+document.querySelectorAll(".accordion-header").forEach(header => {
+    header.addEventListener("click", () => {
+        const parent = header.parentElement;
+        parent.classList.toggle("active");
+    });
+});
