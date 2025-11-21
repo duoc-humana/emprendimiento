@@ -9,7 +9,7 @@ get_header();
 
 <!-- Banner de empresas con swiper !-->
     <div class="swiper mySwiper container-fluid">
-        <div class="swiper-wrapper row">
+        <div class="swiper-wrapper row d-flex">
 
             <?php
                 $query = new WP_Query(array(
@@ -23,7 +23,7 @@ get_header();
 
             ?>
 
-            <div class="swiper-slide d-flex">
+            <div class="swiper-slide">
                 <img class="ajuste" src="<?php echo esc_url($img_url); ?>">
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
