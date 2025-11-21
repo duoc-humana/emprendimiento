@@ -8,11 +8,8 @@ get_header();
 
 
 <!-- Banner de empresas con swiper !-->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
 
             <?php
                 $query = new WP_Query(array(
@@ -30,11 +27,10 @@ get_header();
                 <img src="<?php echo esc_url($img_url); ?>">
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
-                </div>
-            </div>
         </div>
     </div>
-</div>
+        
+
 
 
 
