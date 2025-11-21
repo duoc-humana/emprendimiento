@@ -87,3 +87,15 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
   }
 }
 // register a new menu
+
+//CPT de empresas en el home
+function cpt_secciones_home() {
+    register_post_type('empresas_home', array(
+        'label' => 'Empresas Home',
+        'public' => true,
+        'menu_icon' => 'dashicons-admin-home',
+        'show_ui' => true,
+        'supports' => array('title'),
+    ));
+}
+add_action('init', 'cpt_secciones_home');
