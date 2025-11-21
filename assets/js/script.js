@@ -14,3 +14,17 @@ searchContainers.forEach((searchContainer) => {
         }
     });
 });
+
+//Script de activación del Swiper
+const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    speed: 5000,
+    freeMode: true,
+    freeModeMomentum: false,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+});
