@@ -23,7 +23,7 @@ get_header();
 
             ?>
 
-            <div class="swiper-slide">
+            <div class="swiper-slide d-flex">
                 <img class="ajuste" src="<?php echo esc_url($img_url); ?>">
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
