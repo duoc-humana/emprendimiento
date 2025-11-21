@@ -15,17 +15,14 @@ searchContainers.forEach((searchContainer) => {
     });
 });
 
-//Script de activación del Swiper
 const swiper = new Swiper(".mySwiper", {
     loop: true,
-    slidesPerView: 1,
-    slidesPerGroup: 1,
+    slidesPerView: "auto",
     spaceBetween: 0,
-    speed: 10000,
-    freeMode: false,
-    freeModeMomentum: false,
+    speed: 6000, // Velocidad del movimiento
     autoplay: {
         delay: 0,
+        disableOnInteraction: false,
     },
-    
+    allowTouchMove: false,
 });
