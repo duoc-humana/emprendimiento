@@ -18,7 +18,7 @@ get_header();
     $fields = SCF::get('empresas_home', get_the_ID());
 ?>
     <div class="swiper-slide"> 
-    <img src="<?php echo esc_url(wp_get_attachment_src($fields['empresa'])); ?>">
+    <img src="<?php echo esc_url(wp_get_attachment_image_src($fields['empresa'])); ?>">
     </div>
 <?php endwhile; wp_reset_postdata(); ?>
   </div>
