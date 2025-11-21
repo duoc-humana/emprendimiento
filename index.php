@@ -23,8 +23,8 @@ get_header();
 
             ?>
 
-            <div class="swiper-slide">
-                <img class="ajuste" src="<?php echo esc_url($img_url); ?>">
+            <div class="swiper-slide ajuste">
+                <img src="<?php echo esc_url($img_url); ?>">
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
         </div>
