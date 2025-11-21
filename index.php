@@ -10,7 +10,7 @@ get_header();
 <!-- Banner de empresas con swiper !-->
 <div class="container">
     <div class="row">
-        <div class="col-lg-10">
+        <div class="col-lg-8">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
 
