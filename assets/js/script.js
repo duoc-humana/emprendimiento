@@ -19,7 +19,7 @@ searchContainers.forEach((searchContainer) => {
 const swiper = new Swiper(".mySwiper", {
     loop: false,
     slidesPerView: 'auto',
-    spaceBetween: 20,
+    spaceBetween: 30,
     speed: 5000,
     freeMode: true,
     freeModeMomentum: false,
