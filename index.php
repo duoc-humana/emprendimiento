@@ -12,10 +12,12 @@ $query = new WP_Query(array(
 ));
 
 while ($query->have_posts()) : $query->the_post();
-    $fields = get_post_meta(get_the_ID(), 'empresa_campos', true);
+    $fields = get_post_meta(get_the_ID(), 'empresa', true);
+    $img_url = wp_get_attachment_url($fields);
+
 ?>
     <section>
-        <img src="<?php echo esc_url(wp_get_attachment_url($fields['empresa'])); ?>">
+        <img src="<?php echo esc_url($img_url); ?>">
     </section>
 
 <?php endwhile; wp_reset_postdata(); ?>
