@@ -1,53 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recicla2</title>
     <?php wp_head(); ?>
 </head>
 
-<body>
-    <header class="header">
-        <div class="header-left d-flex justify-content-center">
-            <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
-            <i class="fa-brands fa-facebook fa-xl ms-2" style="color: #ffffff;"></i>
+<body <?php body_class(); ?>>
+<header>
+    <!-- Barra superior -->
+    <div class="barra-superior d-none d-lg-flex justify-content-between align-items-center">
+        <div class="header-left d-flex gap-3">
+            <i class="fa-brands fa-instagram fa-xl"></i>
+            <i class="fa-brands fa-facebook fa-xl"></i>
         </div>
-
-        <div class="header-right">
-            <a href="carrito.html"><i class="fa-solid fa-cart-shopping fa-xl" style="color: #ffffff;"></i></a>
-            <div class="search-container">
-                <input type="text" class="search-input" placeholder="Buscar...">
+        <div class="header-right d-flex align-items-center gap-3">
+            <div class="search-container d-flex align-items-center">
+                <input type="text" class="search-input form-control" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass search-btn fa-2xl"></i>
             </div>
-            <i class="fa-solid fa-magnifying-glass fa-xl search-btn punto" style="color: #ffffff;"></i>
+            <a href="<?php echo function_exists('wc_get_cart_url') ? wc_get_cart_url() : '#'; ?>">
+                <i class="fa-solid fa-cart-shopping fa-xl carrito-icon"></i>
+            </a>
         </div>
-    </header>
-    <nav class="navbar">
-        <div class="nav-left">
-            <a href="index.html"><img src="assets/img/logoheader.png" alt="Logo" class="logo"></a>
-        </div>
+    </div>
 
-        <div class="nav-right">
-            <ul class="nav-menu">
-                 <?php
-                        wp_nav_menu(array(
-                            'theme_location' => 'menu-principal',
-                            'container' => false,
-                            'menu_class' => '',
-                            'fallback_cb' => '__return_false',
-                            'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
-                            'depth' => 2,
-                            'walker' => new bootstrap_5_wp_nav_menu_walker()
-                        ));
-                        ?>
-            </ul>
+    <!-- Navbar principal -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logoheader.png" alt="Logo" class="logo">
+            </a>
+            <button class="navbar-toggler custom-toggle" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Buscador móvil -->
+                <div class="mobile-search d-lg-none mb-3">
+                    <input type="text" class="form-control" placeholder="Buscar...">
+                </div>
 
-            <!--Menú hamburguesa-->
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
+                <!-- Menú dinámico de WordPress -->
+                <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'menu-principal',
+                    'container'      => false,
+                    'menu_class'     => 'navbar-nav ms-auto gap-2',
+                    'fallback_cb'    => '__return_false',
+                    'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'depth'          => 2,
+                    'walker'         => new bootstrap_5_wp_nav_menu_walker()
+                ));
+                ?>
+
+                <!-- Redes sociales en móvil -->
+                <div class="mobile-socials d-lg-none d-flex justify-content-center gap-4 mt-4 mb-3">
+                    <i class="fa-brands fa-instagram fa-xl"></i>
+                    <i class="fa-brands fa-facebook fa-xl"></i>
+                </div>
+                <div class="mobile-menu-divider d-lg-none"></div>
             </div>
         </div>
     </nav>
+</header>
