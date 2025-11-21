@@ -13201,7 +13201,6 @@ span {
 }
 
 .ajuste {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 200;
+  height: 200;
 }/*# sourceMappingURL=mi-estilo.css.map */
