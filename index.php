@@ -24,7 +24,10 @@ while ($query->have_posts()) : $query->the_post();
 
 ?>
 
-    <div class="swiper-slide ajuste"><img src="<?php echo esc_url($img_url); ?>"></div>
+    <div class="swiper-slide ajuste">
+        <img src="<?php echo esc_url($img_url); ?>">
+        <img src="<?php echo esc_url($img_url); ?>">
+    </div>
     <?php endwhile; wp_reset_postdata(); ?>
   </div>
 </div>
