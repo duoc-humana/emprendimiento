@@ -18,8 +18,8 @@ searchContainers.forEach((searchContainer) => {
 //Script de activación del Swiper
 const swiper = new Swiper(".mySwiper", {
     loop: true,
-    slidesPerView: 'auto',
-    spaceBetween: 0,
+    slidesPerView: '2',
+    spaceBetween: 20,
     speed: 5000,
     freeMode: true,
     freeModeMomentum: false,
