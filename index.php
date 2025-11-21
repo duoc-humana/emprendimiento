@@ -8,10 +8,10 @@ get_header();
 
 
 <!-- Banner de empresas con swiper !-->
-    <div class="swiper mySwiper container-fluid">
-        <div class="swiper-wrapper row">
-
-            <?php
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <?php
                 $query = new WP_Query(array(
                     'post_type' => 'empresas_home',
                     'posts_per_page' => 6
@@ -22,11 +22,10 @@ get_header();
                     $img_url = wp_get_attachment_url($fields);
 
             ?>
-
-            <div class="swiper-slide col-lg-2">
                 <img class="ajuste" src="<?php echo esc_url($img_url); ?>">
+             <?php endwhile; wp_reset_postdata(); ?>
             </div>
-            <?php endwhile; wp_reset_postdata(); ?>
+           
         </div>
     </div>
         
