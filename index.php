@@ -14,7 +14,7 @@ get_header();
             <?php
                 $query = new WP_Query(array(
                     'post_type' => 'empresas_home',
-                    'posts_per_page' => 5
+                    'posts_per_page' => 6
                 ));
 
                 while ($query->have_posts()) : $query->the_post();
