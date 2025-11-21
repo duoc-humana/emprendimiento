@@ -23,7 +23,7 @@ get_header();
         $img = wp_get_attachment_image_src($imagen_id, 'full');
     ?>
         <div class="swiper-slide">
-            <img src="<?php echo esc_url($img[0]); ?>" alt="">
+            <img src="<?php echo esc_url($img); ?>" alt="">
         </div>
     <?php endwhile; wp_reset_postdata(); ?>
   </div>
