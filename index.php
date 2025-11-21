@@ -12,7 +12,7 @@ $query = new WP_Query(array(
 ));
 
 while ($query->have_posts()) : $query->the_post();
-    $fields = SCF::get('empresa_campos', get_the_ID());
+    $fields = get_post_meta(get_the_ID(), 'empresa_campos', true);
 ?>
     <section>
         <img src="<?php echo esc_url(wp_get_attachment_url($fields['empresa'])); ?>">
