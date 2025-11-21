@@ -14,7 +14,7 @@ get_header();
             <?php
                 $query = new WP_Query(array(
                     'post_type' => 'empresas_home',
-                    'posts_per_page' => 6
+                    'posts_per_page' => 4
                 ));
 
                 while ($query->have_posts()) : $query->the_post();
@@ -23,7 +23,7 @@ get_header();
 
             ?>
 
-            <div class="swiper-slide col-lg-2">
+            <div class="swiper-slide col-lg-3">
                 <img class="ajuste" src="<?php echo esc_url($img_url); ?>">
             </div>
             <?php endwhile; wp_reset_postdata(); ?>
