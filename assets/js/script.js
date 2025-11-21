@@ -21,8 +21,8 @@ const swiper = new Swiper(".mySwiper", {
     slidesPerView: 'auto',
     slidesPerGroup: '3',
     spaceBetween: 0,
-    speed: 5000,
-    freeMode: true,
+    speed: 10000,
+    freeMode: false,
     freeModeMomentum: false,
     autoplay: {
         delay: 0,
