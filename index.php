@@ -8,7 +8,7 @@ get_header();
 
 
 <!-- Banner de empresas con swiper !-->
- 
+
 <div class="swiper mySwiper">
   <div class="swiper-wrapper">
 
@@ -24,7 +24,7 @@ while ($query->have_posts()) : $query->the_post();
 
 ?>
 
-    <div class="swiper-slide"><img src="<?php echo esc_url($img_url); ?>"></div>
+    <div class="swiper-slide ajuste"><img src="<?php echo esc_url($img_url); ?>"></div>
     <?php endwhile; wp_reset_postdata(); ?>
   </div>
 </div>
