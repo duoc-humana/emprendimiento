@@ -1,26 +1,26 @@
+const searchContainers = document.querySelectorAll('.search-container');
 
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+searchContainers.forEach((searchContainer) => {
+    const searchBtn = searchContainer.querySelector('.search-btn');
+    const searchInput = searchContainer.querySelector('.search-input');
 
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-});
+    if (!searchBtn || !searchInput) return;
 
+    searchBtn.addEventListener('click', () => {
+        searchContainer.classList.toggle('active');
 
-
-const searchBtn = document.querySelector('.search-btn');
-const searchContainer = document.querySelector('.search-container');
-
-searchBtn.addEventListener('click', () => {
-    searchContainer.classList.toggle('active');
-});
-
-
-
-/* footer */
-document.querySelectorAll(".accordion-header").forEach(header => {
-    header.addEventListener("click", () => {
-        const parent = header.parentElement;
-        parent.classList.toggle("active");
+        if (searchContainer.classList.contains('active')) {
+            setTimeout(() => searchInput.focus(), 250);
+        }
     });
+});
+
+const serviciosLink = document.querySelector('.servicios-link');
+const serviciosDropdown = document.querySelector('.dropdown-custom');
+
+serviciosLink.addEventListener('click', (e) => {
+    if (window.innerWidth < 992) {
+        e.preventDefault();
+        serviciosDropdown.classList.toggle('open');
+    }
 });
