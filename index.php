@@ -9,7 +9,7 @@ get_header();
 
 <!-- Banner de empresas con swiper !-->
     <div class="swiper mySwiper container-fluid">
-        <div class="swiper-wrapper row d-flex">
+        <div class="swiper-wrapper">
 
             <?php
                 $query = new WP_Query(array(
