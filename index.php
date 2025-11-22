@@ -3,7 +3,7 @@
 get_header();
 ?>
 
-<h1>Hola, este es mi tema desde cero</h1>
+<h1>No me carga el carrito</h1>
 
 
 
