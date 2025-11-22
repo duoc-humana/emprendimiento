@@ -29,7 +29,6 @@
                     </span>
                 <?php endif; ?>
             </a>
-            <p>La URL del carrito es: <?php echo wc_get_cart_url(); ?></p>
         </div>
     </div>
 
