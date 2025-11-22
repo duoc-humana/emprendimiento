@@ -21,8 +21,13 @@
                 <input type="text" class="search-input form-control" placeholder="Buscar...">
                 <i class="fa-solid fa-magnifying-glass search-btn fa-2xl"></i>
             </div>
-            <a href="<?php echo function_exists('wc_get_cart_url') ? wc_get_cart_url() : '#'; ?>">
+            <a href="<?php echo wc_get_cart_url(); ?>" class="position-relative">
                 <i class="fa-solid fa-cart-shopping fa-xl carrito-icon"></i>
+                <?php if (WC()->cart->get_cart_contents_count() > 0): ?>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-white text-dark border">
+                        <?php echo WC()->cart->get_cart_contents_count(); ?>
+                    </span>
+                <?php endif; ?>
             </a>
         </div>
     </div>
