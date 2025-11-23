@@ -3,10 +3,8 @@
 get_header();
 ?>
 
-<h1>No me carga el carrito</h1>
 
-
-
+<main>
 <!--PRODUCTO DESTACADO +++++++++++++++++++-->
         <div class="container-fluid">
             <div class="row">
@@ -89,7 +87,7 @@ get_header();
     </div>
 </div>
 
-        
+</main>        
 
 
 
