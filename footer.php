@@ -1,49 +1,69 @@
-
-    <footer class="footer esp2">
+<footer class="footer">
         <div class="footer-content">
 
-            <div class="footer-section">
-                <h3>Sobre mí</h3>
-                <ul>
-                    <li>Historia</li>
-                    <li>Misión y visión</li>
-                    <li>Equipo</li>
-                </ul>
-            </div>
+            <!-- Sección 1 -->
+            <div class="footer-section accordion-item">
+                <h4 class="h4footer">Sobre mi</h4>
+                <button class="accordion-header">
+                    Sobre mí
+                    <span class="accordion-icon">+</span>
+                </button>
 
-            <div class="footer-section">
-                <h3>Productos</h3>
-                <ul>
-                    <li>Destacados</li>
-                    <li>Nuevos</li>
-                    <li>Ofertas</li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Contacto</h3>
-                <ul>
-                    <li>Tel: +00 123 456</li>
-                    <li>Email: info@empresa.com</li>
-                    <li>Ubicación</li>
-                </ul>
-
-                <!-- Redes sociales -->
-                <div class="social-icons">
-                    <a href="#"><img src="assets/img/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="assets/img/instagram.png" alt="Instagram"></a>
-                    <a href="#"><img src="" alt="Twitter"></a>
+                <div class="accordion-body">
+                    <ul>
+                        <li>Quienes somos</li>
+                        <li>Servicios</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Logo a la derecha -->
+            <!-- Sección 2 -->
+            <div class="footer-section accordion-item">
+                <h4 class="h4footer">Productos</h4>
+                <button class="accordion-header">
+                    Productos
+                    <span class="accordion-icon">+</span>
+                </button>
+
+                <div class="accordion-body">
+                    <ul>
+                        <li>Maceteros</li>
+                        <li>Confecciones</li>
+                        <li>Revestimiento</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sección 3 -->
+            <div class="footer-section accordion-item">
+                <h4 class="h4footer">Contacto</h4>
+                <button class="accordion-header">
+                    Contacto
+                    <span class="accordion-icon">+</span>
+                </button>
+
+                <div class="accordion-body">
+                    <ul>
+                        <li>consuelomiranda@gmail.com</li>
+                        <li>WhatsApp: +56 9 3267 9682</li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook fa-xl ms-2" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+                        <i class="fa-brands fa-x-twitter fa-xl" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGO -->
             <div class="footer-logo">
-                <img src="logo.png" alt="Logo de la empresa">
+                <img src="assets/img/logocircularblanco.png" alt="Logo de la empresa">
             </div>
 
         </div>
 
-        <div class="footer-bottom">
+        <div class="footer-bottom linemarca">
             <p>© 2025 Mi Marca — Todos los derechos reservados.</p>
         </div>
     </footer>
