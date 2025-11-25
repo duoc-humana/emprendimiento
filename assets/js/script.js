@@ -16,6 +16,7 @@ searchContainers.forEach((searchContainer) => {
 });
 
  var swiper = new Swiper(".mySwiper", {
+    loop: true,
       spaceBetween: 30,
       centeredSlides: true,
       autoplay: {
