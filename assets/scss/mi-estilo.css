@@ -12638,34 +12638,28 @@ img {
   margin-right: 10px;
 }
 
-/* Ocultamos el aside por defecto en móviles 
 @media (max-width: 650px) {
-    #filterAside {
-        display: none;
+  #filterAside {
+    display: none;
+  }
+  #filterAside.open {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+  }
+  .filter-toggle-btn {
+    display: block;
+  }
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
     }
-
-    #filterAside.open {
-        display: block;
-        animation: slideDown .3s ease-out;
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-
-    .filter-toggle-btn {
-        display: block;
-    }
-
-    @keyframes slideDown {
-        from {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    }
+  }
 }
-*/
 /* Estilos mobile (<= 768px) */
 @media (max-width: 768px) {
   .product-item {
