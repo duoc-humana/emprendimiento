@@ -1181,11 +1181,12 @@ span {
       display: flex;
       justify-content: center;
       align-items: center;
-    }
-
-    .swiper-slide img {
+      img {
       display: block;
-      width: 200px;
+      width: 250px;
       height: 200px;
       object-fit: cover;
     }
+      
+    }
+

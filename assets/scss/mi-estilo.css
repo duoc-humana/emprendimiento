@@ -13212,10 +13212,9 @@ span {
   justify-content: center;
   align-items: center;
 }
-
 .swiper-slide img {
   display: block;
-  width: 200px;
+  width: 250px;
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
