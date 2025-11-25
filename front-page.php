@@ -63,7 +63,7 @@ get_header();
 
 
 <!-- Sección de banner de empresas -->
-<!-- <div class="swiper mySwiper">
+<div class="swiper mySwiper">
     <div class="swiper-wrapper">
 
         <?php
@@ -85,9 +85,9 @@ get_header();
         <?php endwhile; wp_reset_postdata(); ?>
 
     </div>
-</div> -->
+</div> 
 
- <div class="container mb-5">
+ <!-- <div class="container mb-5">
             <h3 class="mt-4">Galería</h3>
 
             <?php $galeria = get_field('empresa'); ?>
@@ -105,12 +105,11 @@ get_header();
                             </div>
                         <?php endforeach; ?>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
             <?php else: ?>
                 <p>No se encontraron imágenes.</p>
             <?php endif; ?>
-        </div>
+        </div> -->
 
 </main>        
 

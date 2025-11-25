@@ -15,14 +15,19 @@ searchContainers.forEach((searchContainer) => {
     });
 });
 
-const swiper = new Swiper(".mySwiper", {
-    loop: true,
-    slidesPerView: "auto",
-    spaceBetween: 0,
-    speed: 6000, // Velocidad del movimiento
-    autoplay: {
-        delay: 0,
+ var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
         disableOnInteraction: false,
-    },
-    allowTouchMove: false,
-});
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });

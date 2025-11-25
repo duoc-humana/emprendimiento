@@ -89,7 +89,7 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
 // register a new menu
 
 //CPT de empresas en el home
-/* function cpt_secciones_home() {
+function cpt_secciones_home() {
     register_post_type('empresas_home', array(
         'label' => 'Empresas Home',
         'public' => true,
@@ -110,4 +110,4 @@ function cpt_producto_home() {
         'supports' => array('title'),
     ));
 }
-add_action('init', 'cpt_producto_home'); */
+add_action('init', 'cpt_producto_home'); 
