@@ -13,7 +13,7 @@ get_header();
                     <p class="bajada-titulo-banner">Innovación circular para empresas y comunidades.</p>
                 </div>
                 <div class="col-md-6 pos1">
-                    <img src="assets/img/img-home1.png" alt="Desfribilado de textil de jeans">
+                    <img src="assets/img/img-home1" alt="Desfribilado de textil de jeans">
 
                     <a href="#" class="btn1 pos2">Quiénes somos</a>
 
