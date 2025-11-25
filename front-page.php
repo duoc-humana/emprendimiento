@@ -63,13 +63,39 @@ get_header();
 
 
 <!-- Sección de banner de empresas -->
- <div class="container mb-5">
-            <?php $imgEmpresas = get_field('empresa'); ?>
+<!-- <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
 
-            <?php if ($imgEmpresas): ?>
-                <div class="swiper ">
+        <?php
+        $query = new WP_Query(array(
+            'post_type' => 'empresas_home',
+            'posts_per_page' => -1
+        ));
+
+        while ($query->have_posts()) :
+            $query->the_post();
+            $fields = get_post_meta(get_the_ID(), 'empresa', true);
+            $img_url = wp_get_attachment_url($fields);
+        ?>
+        
+        <div class="swiper-slide">
+            <img class="ajuste" src="<?php echo esc_url($img_url); ?>">
+        </div>
+
+        <?php endwhile; wp_reset_postdata(); ?>
+
+    </div>
+</div> -->
+
+ <div class="container mb-5">
+            <h3 class="mt-4">Galería</h3>
+
+            <?php $galeria = get_field('empresa'); ?>
+
+            <?php if ($galeria): ?>
+                <div class="swiper galeria-fotos">
                     <div class="swiper-wrapper">
-                        <?php foreach ($imgEmpresas as $imagen): ?>
+                        <?php foreach ($galeria as $imagen): ?>
                             <div class="swiper-slide">
                                 <img 
                                     src="<?php echo esc_url($imagen['sizes']['large']); ?>" 
