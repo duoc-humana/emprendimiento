@@ -172,55 +172,50 @@ get_header();
                 </div>
             </div>
 
-
-<!-- Sección de banner de empresas -->
-<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-
-        <?php
-        $query = new WP_Query(array(
-            'post_type' => 'empresas_home',
-            'posts_per_page' => -1
-        ));
-
-        while ($query->have_posts()) :
-            $query->the_post();
-            $fields = get_post_meta(get_the_ID(), 'empresa', true);
-            $img_url = wp_get_attachment_url($fields);
-        ?>
-        
-        <div class="swiper-slide">
-            <img class="ajuste" src="<?php echo esc_url($img_url); ?>">
-        </div>
-
-        <?php endwhile; wp_reset_postdata(); ?>
-
-    </div>
-</div> 
-
- <!-- <div class="container mb-5">
-            <h3 class="mt-4">Galería</h3>
-
-            <?php $galeria = get_field('empresa'); ?>
-
-            <?php if ($galeria): ?>
-                <div class="swiper galeria-fotos">
-                    <div class="swiper-wrapper">
-                        <?php foreach ($galeria as $imagen): ?>
-                            <div class="swiper-slide">
-                                <img 
-                                    src="<?php echo esc_url($imagen['sizes']['large']); ?>" 
-                                    alt="<?php echo esc_attr($imagen['alt']); ?>" 
-                                    class="img-fluid"
-                                >
-                            </div>
-                        <?php endforeach; ?>
-                    </div>
+ <div class="container-fluid esp3 ocultar">
+            <div class="row esp5 px-5">
+                <div class="col-md-6">
+                    <h2 class="esp4 mt-5">Trabajo con empresas</h2>
+                    <p class="esp5">Trabajamos con empresas e instituciones que buscan gestionar sus residuos textiles
+                        de manera responsable, evitando que terminen en vertederos y reincorporándolos en nuevos
+                        productos. Ofrecemos retiro certificado, destrucción de identidad corporativa, transformación en
+                        productos circulares y entrega de reportes ambientales con CO₂ evitado y agua ahorrada.</p>
+                    <a href="#" class="btn2">Servicio</a>
                 </div>
-            <?php else: ?>
-                <p>No se encontraron imágenes.</p>
-            <?php endif; ?>
-        </div> -->
+                <div class="col-md-6 bg">
+                    <img src="assets/img/maceta-2.png" alt="" class="h-100">
+                </div>
+            </div>
+             <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <?php
+                    $query = new WP_Query(array(
+                        'post_type' => 'empresas_home',
+                        'posts_per_page' => -1
+                    ));
+
+                    while ($query->have_posts()) :
+                        $query->the_post();
+                        $fields = get_post_meta(get_the_ID(), 'empresa', true);
+                        $img_url = wp_get_attachment_url($fields);
+                    ?>
+                    
+                    <div class="swiper-slide">
+                        <img class="ajuste" src="<?php echo esc_url($img_url); ?>">
+                    </div>
+
+                    <?php endwhile; wp_reset_postdata(); ?>
+
+                </div>
+            </div> 
+
+           
+        </div>
+    <!-- Sección de banner de empresas -->
+   
+ 
+
 
 </main>        
 
