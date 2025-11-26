@@ -12315,7 +12315,7 @@ a {
 
 /* +++++ COLOR DE TEXTO +++++ */
 .color-blanco {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .color-celeste {
@@ -12366,6 +12366,7 @@ img {
 }
 
 .btn2 {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   color: #0471B4;
 =======
@@ -12375,6 +12376,9 @@ img {
   color: #26364D;
 >>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
 >>>>>>> 7a44128cdb680edb2ac66acdc27c3faad553cd88
+=======
+  color: #26364D !important;
+>>>>>>> Stashed changes
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
@@ -12384,8 +12388,8 @@ img {
 }
 
 .btn2:hover {
-<<<<<<< HEAD
   color: #ffffff !important;
+<<<<<<< Updated upstream
   background-color: #0471B4 !important;
 =======
   color: #ffffff;
@@ -12395,6 +12399,9 @@ img {
   background-color: #26364D;
 >>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
 >>>>>>> 7a44128cdb680edb2ac66acdc27c3faad553cd88
+=======
+  background-color: #26364D !important;
+>>>>>>> Stashed changes
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
@@ -12495,6 +12502,7 @@ img {
 }
 
 .link:hover {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   color: #0471B4;
 =======
@@ -12504,6 +12512,9 @@ img {
   color: #26364D;
 >>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
 >>>>>>> 7a44128cdb680edb2ac66acdc27c3faad553cd88
+=======
+  color: #26364D !important;
+>>>>>>> Stashed changes
 }
 
 .bajada-titulo-banner {
@@ -12515,6 +12526,7 @@ img {
 }
 
 .txt-esp1 {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   color: #0471B4;
 =======
@@ -12524,6 +12536,9 @@ img {
   color: #26364D;
 >>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
 >>>>>>> 7a44128cdb680edb2ac66acdc27c3faad553cd88
+=======
+  color: #26364D !important;
+>>>>>>> Stashed changes
   font-family: "Montserrat", sans-serif;
   line-height: 2.375rem;
   font-size: 1.875rem;
@@ -13321,6 +13336,7 @@ span {
 }
 
 .carrito-btn-comprar {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   color: #0471B4;
 =======
@@ -13330,6 +13346,9 @@ span {
   color: #26364D;
 >>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
 >>>>>>> 7a44128cdb680edb2ac66acdc27c3faad553cd88
+=======
+  color: #26364D !important;
+>>>>>>> Stashed changes
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
@@ -13342,8 +13361,8 @@ span {
   background-image: none !important;
 }
 .carrito-btn-comprar:hover {
-<<<<<<< HEAD
   color: #ffffff !important;
+<<<<<<< Updated upstream
   background-color: #0471B4 !important;
 =======
   color: #ffffff;
@@ -13353,6 +13372,9 @@ span {
   background-color: #26364D;
 >>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
 >>>>>>> 7a44128cdb680edb2ac66acdc27c3faad553cd88
+=======
+  background-color: #26364D !important;
+>>>>>>> Stashed changes
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;

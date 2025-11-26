@@ -329,7 +329,7 @@ a {
 
 /* +++++ COLOR DE TEXTO +++++ */
 .color-blanco {
-    color: $color-fondo;
+    color: $color-fondo !important;
 }
 
 .color-celeste {
