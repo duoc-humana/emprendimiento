@@ -293,7 +293,11 @@ a {
     margin: 0;
 }
 
-
+@media (max-width: 768px) {
+    .footer-section h4.h4footer {
+        display: none;
+    }
+}
 /* ---- HOME ----- */
 
 /* +++++ ESPACIADOS +++++ */
