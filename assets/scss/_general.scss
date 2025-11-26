@@ -473,9 +473,12 @@ img {
 //Proceso de confección con iconos.
 
 .icono-proceso {
-    max-width: 120px;  
+    max-width: 120px;
     width: 100%;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .altura {
