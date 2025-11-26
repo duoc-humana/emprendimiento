@@ -12517,6 +12517,12 @@ img {
   height: 305px;
 }
 
+.icono-proceso {
+  max-width: 70px;
+  width: 100%;
+  height: auto;
+}
+
 .altura {
   height: 100px;
 }
