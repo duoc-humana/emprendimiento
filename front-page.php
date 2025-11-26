@@ -196,63 +196,7 @@ get_header();
                <?php endwhile; wp_reset_postdata(); endif; ?>
             </div>
             <!-- Bloques de categorias -->
-             <div class="row esp3 d-flex justify-content-center d-none d-md-flex">
-                <div class="col-md-3">
-                    <a href="#" class="btn3">Maceteros</a>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-3">
-                    <a href="#" class="btn4">Confección</a>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-3">
-                    <a href="#" class="btn5">Revestimiento</a>
-                </div>
-            </div>
-
-            <!-- Versión móvil: carrusel visible solo en sm y xs -->
-            <div id="categoriasCarousel" class="carousel slide d-block d-md-none py-2 esp2" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex justify-content-center contebotonmovl">
-                            <a href="#" class="btn3 textbtn">Maceteros</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center contebotonmovl">
-                            <a href="#" class="btn4 textbtn">Confección</a>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex justify-content-center contebotonmovl">
-                            <a href="#" class="btn5 textbtn">Revestimiento</a>
-                        </div>
-                    </div>
-                </div>
-
-              
-                <button class="carousel-control-prev" type="button" data-bs-target="#categoriasCarousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#categoriasCarousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
-
-                <!-- Indicadores  -->
-                <div class="carousel-indicators mt-2">
-                    <button type="button" data-bs-target="#categoriasCarousel" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="1"></button>
-                    <button type="button" data-bs-target="#categoriasCarousel" data-bs-slide-to="1"
-                        aria-label="2"></button>
-                    <button type="button" data-bs-target="#categoriasCarousel" data-bs-slide-to="2"
-                        aria-label="3"></button>
-                </div>
-            </div>
-        </div>
+             
         </div>
 
  <div class="container-fluid esp3 ocultar">
