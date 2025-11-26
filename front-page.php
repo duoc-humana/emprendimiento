@@ -119,11 +119,25 @@ get_header();
 <!--PRODUCTO DESTACADO ++++++++++++++++++-->
         <div class="container-fluid">
             <div class="row">
+                <?php
+                    $query = new WP_Query(array(
+                        'post_type' => 'producto_home',
+                        'posts_per_page' => -1
+                    ));
+
+                    while ($query->have_posts()) :
+                        $query->the_post();
+                        $id_imagen = get_post_meta(get_the_ID(), 'imagen_de_producto_destacado', true);
+                        $img_destacado = wp_get_attachment_url($id_imagen);
+                    ?>
+
+
                 <div class="col-md-6 img-fondo">
                     <div class="row d-flex justify-content-center align-items-star">
                         <div class="col-md-12 mt-3">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/maceta-1.png" alt="">
+                            <img src="<?php echo esc_url($img_destacado); ?>" alt="">
                         </div>
+                        <?php endwhile; wp_reset_postdata(); ?>
                     </div>
                     <div class="row">
                         <div class="col-md-5 d-flex justify-content-center">
@@ -161,6 +175,7 @@ get_header();
                                 jeans.</p>
                         </div>
                     </div>
+                    
                     <div class="row">
                         <div class="col-md-6">
                             <a href="#" class="btn2">Comprar</a>
@@ -170,7 +185,9 @@ get_header();
                         </div>
                     </div>
                 </div>
+                
             </div>
+        </div>
 
  <div class="container-fluid esp3 ocultar">
             <div class="row esp5 px-5">
