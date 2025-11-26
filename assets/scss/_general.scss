@@ -141,12 +141,10 @@ a {
 
 
 
-
-
 /* -------- FOOTER -------- */
 .footer {
-    background-color: #26364D; /* Azul oscuro */
-    color: #ffffff; /* Texto por defecto en blanco */
+    background-color: #26364D; 
+    color: #ffffff;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
 }
@@ -164,13 +162,13 @@ a {
 
 /* Secciones */
 .footer-section {
-    color: #ffffff; /* Forzar blanco en todo el contenido */
+    color: #ffffff; 
 }
 
 .footer-section h4.h4footer {
     margin-bottom: 15px;
     font-size: 18px;
-    color: #ffffff; /* Forzar blanco */
+    color: #ffffff; 
 }
 
 .footer-section ul {
@@ -181,7 +179,7 @@ a {
 .footer-section li {
     margin: 10px 0;
     font-size: 15px;
-    color: #ffffff; /* Forzar blanco */
+    color: #ffffff;
 }
 
 /* Redes sociales */
@@ -192,7 +190,7 @@ a {
 }
 
 .social-icons i {
-    color: #ffffff; /* Forzar blanco */
+    color: #ffffff; 
     transition: 0.3s ease;
     cursor: pointer;
 }
@@ -204,7 +202,7 @@ a {
 
 /* Logo */
 .footer-logo {
-    margin-left: auto; /* Empuja el logo al extremo derecho */
+    margin-left: auto; 
 }
 
 .footer-logo img {
@@ -221,7 +219,7 @@ a {
     border-top: 1px solid rgba(255, 255, 255, 0.3);
     padding-top: 15px;
     font-size: 14px;
-    color: #ffffff; /* Forzar blanco */
+    color: #ffffff; 
 }
 
 .linemarca {
@@ -230,11 +228,11 @@ a {
 
 /* -------- RESPONSIVE -------- */
 .accordion-header {
-    display: none; /* Oculto en desktop */
+    display: none; 
 }
 
 @media (max-width: 768px) {
-    /* Ocultar las listas por defecto */
+ 
     .accordion-body {
         display: none;
         padding: 10px 0 15px;
@@ -288,15 +286,7 @@ a {
         width: 100%;
     }
 }
-.footer-bottom {
-    color: white; 
-    max-width: 1100px;
-    margin: 40px auto 0;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.3);
-    padding-top: 15px;
-    font-size: 14px;
-}
+
 
 .footer-bottom p {
     color: white !important;

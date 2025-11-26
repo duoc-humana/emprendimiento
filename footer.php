@@ -64,7 +64,7 @@
     </div>
 
     <div class="footer-bottom linemarca">
-        <p>© 2025 Mi Marca — Todos los derechos reservados.</p>
+        <p>© 2025 Recicla2 — Todos los derechos reservados.</p>
     </div>
 </footer>
 

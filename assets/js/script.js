@@ -43,3 +43,13 @@ searchContainers.forEach((searchContainer) => {
       },
       
     });
+
+// ACORDEÓN FOOTER (solo mobile)
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+    header.addEventListener('click', function () {
+        const accordionItem = this.parentElement;
+        accordionItem.classList.toggle('active');
+    });
+});
