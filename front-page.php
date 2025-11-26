@@ -68,7 +68,7 @@ get_header();
         <!-- SECCIÓN DE ICONOS ++++++++++++++++-->
         <div class="container esp3 esp5">
             <!-- Fila de iconos -->
-            <div class="row d-flex justify-content-center text-center text-md-start">
+            <div class="row d-flex justify-content-center text-center">
                 <!-- Paso 1 -->
                 <div class="col-12 col-md-2 mb-3 mb-md-0">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/unboxing.png"
