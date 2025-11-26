@@ -119,39 +119,32 @@ get_header();
 <!--PRODUCTO DESTACADO ++++++++++++++++++-->
         <div class="container-fluid">
             <div class="row">
-                <?php
-                    $query = new WP_Query(array(
-                        'post_type' => 'producto_home',
-                        'posts_per_page' => 1
-                    ));
+                    <?php
+                    // Query de productos destacados
+                    $args = array(
+                        'post_type'      => 'product',
+                        'posts_per_page' => 1, // solo uno
+                        'tax_query'      => array(
+                            array(
+                                'taxonomy' => 'product_visibility',
+                                'field'    => 'name',
+                                'terms'    => 'featured', // productos destacados
+                            ),
+                        ),
+                    );
 
-                    while ($query->have_posts()) :
-                        $query->the_post();
-                        //Imagen
-                        $id_imagen = get_post_meta(get_the_ID(), 'imagen_de_producto_destacado', true);
-                        $img_destacado = wp_get_attachment_url($id_imagen);
-                        //Titulo 
-                        $titulo_id = get_the_title();
-                        //Precio
-                        $precio_id = get_post_meta(get_the_ID(), 'precio_producto_destacado', true);
-                        //Descripcion 
-                        $descripcion_id =  get_post_meta(get_the_ID(), 'descripcion_producto_destacado', true);
+                    $query = new WP_Query($args);
 
-                        global $product;
-
-                        // Ensure visibility.
-                        if ( empty( $product ) || ! $product->is_visible() ) {
-                            return;
-                        }
-                    ?>
+                    if ($query->have_posts()) :
+                        while ($query->have_posts()) : $query->the_post();
+                            global $product; // objeto WC_Product
+                            ?>
 
 
                 <div class="col-md-6 img-fondo">
                     <div class="row d-flex justify-content-center align-items-star">
                         <div class="col-md-12 mt-3">
-                            <?php if ($img_destacado): ?>
-                            <img src="<?php echo esc_url($img_destacado); ?>" alt="">
-                            <?php endif; ?>
+                            <?php echo $product->get_image(); ?>
                         </div>
                        
                     </div>
@@ -177,34 +170,30 @@ get_header();
                 <div class="col-md-6 ps-5">
                     <div class="row esp4 mt-5">
                         <div class="col-md-12">
-                            <h2><?php echo esc_html($titulo_id); ?></h2>
+                            <h2><?php the_title(); ?></h2>
                         </div>
                     </div>
                     <div class="row esp4">
                         <div class="col-md-12">
-                            <?php if ($precio_id): ?>
-                            <span class="txt-esp3">$<?php echo esc_html($precio_id); ?></span>
-                            <?php endif; ?>
+                            <span class="txt-esp3"><?php echo $product->get_price_html(); ?></span>
                         </div>
                     </div>
                     <div class="row esp5">
                         <div>
-                             <?php if ($descripcion_id): ?>
-                            <p><?php echo wp_kses_post($descripcion_id); ?></p>
-                            <?php endif; ?>
+                            <p> <?php the_content(); ?></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <button data-product_id="<?php echo esc_attr($product->get_id()); ?>"
-                            data-quantity="1" class="btn2">Comprar</button>
+                            <a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="btn2" data-quantity="1" data-product_id="<?php echo esc_attr( $product->get_id() ); ?>"
+                            rel="nofollow">Comprar</a>
                         </div>
                         <div class="col-md-6">
                             <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="link">Ver productos</a>
                         </div>
                     </div>
                 </div>
-                <?php endwhile; wp_reset_postdata(); ?>
+               <?php endwhile; wp_reset_postdata(); endif; ?>
             </div>
         </div>
 
