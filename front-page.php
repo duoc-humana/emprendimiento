@@ -13,7 +13,7 @@ get_header();
                     <p class="bajada-titulo-banner">Innovación circular para empresas y comunidades.</p>
                 </div>
                 <div class="col-md-6 pos1">
-                    <img src="assets/img/img-home1.png" alt="Desfribilado de textil de jeans">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home1.png" alt="Desfribilado de textil de jeans">
 
                     <a href="#" class="btn1 pos2">Quiénes somos</a>
 
@@ -84,7 +84,7 @@ get_header();
 
                 <!-- Paso 2 -->
                 <div class="col-12 col-md-2 mb-3 mb-md-0">
-                    <img src="assets/img/variations.png" class="img-fluid mt-3 icono-proceso"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/variations.png" class="img-fluid mt-3 icono-proceso"
                         alt=" Icono de clasificación de ropa.">
                     <h2 class="color-celeste mt-4">Se clasifica</h2>
                 </div>
@@ -97,7 +97,7 @@ get_header();
 
                 <!-- Paso 3 -->
                 <div class="col-12 col-md-2 mb-3 mb-md-0">
-                    <img src="assets/img/needle.png" class="img-fluid mt-3 icono-proceso"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/needle.png" class="img-fluid mt-3 icono-proceso"
                         alt="Icono de confección, una aguja y un botón.">
                     <h2 class="color-celeste mt-4">Se trabaja</h2>
                 </div>
@@ -110,7 +110,7 @@ get_header();
 
                 <!-- Paso 4 -->
                 <div class="col-12 col-md-2 mb-3 mb-md-0">
-                    <img src="assets/img/flowerpot.png" class="img-fluid mt-3 icono-proceso"
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/flowerpot.png" class="img-fluid mt-3 icono-proceso"
                         alt="Icono de producto final, maceta con textil reciclado.">
                     <h2 class="color-celeste mt-4">Se crea</h2>
                 </div>
@@ -122,7 +122,7 @@ get_header();
                 <div class="col-md-6 img-fondo">
                     <div class="row d-flex justify-content-center align-items-star">
                         <div class="col-md-12 mt-3">
-                            <img src="assets/img/maceta-1.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/maceta-1.png" alt="">
                         </div>
                     </div>
                     <div class="row">
@@ -183,7 +183,7 @@ get_header();
                     <a href="#" class="btn2">Servicio</a>
                 </div>
                 <div class="col-md-6 bg">
-                    <img src="assets/img/maceta-2.png" alt="" class="h-100">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/maceta-2.png" alt="" class="h-100">
                 </div>
             </div>
              <div class="swiper mySwiper">
