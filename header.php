@@ -16,11 +16,11 @@
             <i class="fa-brands fa-instagram fa-xl"></i>
             <i class="fa-brands fa-facebook fa-xl"></i>
         </div>
-        <div class="header-right d-flex align-items-center gap-3">
-            <div class="search-container d-flex align-items-center">
-                <input type="text" class="search-input form-control" placeholder="Buscar...">
-                <i class="fa-solid fa-magnifying-glass search-btn fa-2xl"></i>
-            </div>
+        <div class="header-right d-flex align-items-center gap-3" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" >
+            <form class="search-container d-flex align-items-center">
+                <input type="search" class="search-input form-control" placeholder="Buscar..." value="<?php echo get_search_query(); ?>" name="s">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass search-btn fa-2xl"></i></button>
+            </form>
            <a href="<?php echo wc_get_cart_url(); ?>" class="position-relative">
                 <i class="fa-solid fa-cart-shopping fa-xl carrito-icon"></i>
                 <?php if (WC()->cart->get_cart_contents_count() > 0): ?>
