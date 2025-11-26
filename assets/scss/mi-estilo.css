@@ -12719,8 +12719,7 @@ img {
     transform: scale(0.98);
   }
   .product-line {
-    display: block;
-    background-color: #0471B4;
+    display: none !important;
   }
 }
 /* ---- MOBILE (<= 768px) ---- */
@@ -12760,8 +12759,7 @@ img {
     border-radius: 6px 6px 0 0;
   }
   .product-line {
-    display: block;
-    background-color: #0471B4;
+    display: none !important;
   }
   .product-name a {
     font-size: 16px;
