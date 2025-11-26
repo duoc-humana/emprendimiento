@@ -189,7 +189,7 @@ get_header();
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="<?php echo esc_url( '?add-to-cart=' . get_the_ID() ); ?>" class="btn2">Comprar</a>
+                            <button data-product_id="<?php echo esc_attr($product->get_id()); ?>" data-quantity="1" class="btn2">Comprar</button>
                         </div>
                         <div class="col-md-6">
                             <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="link">Ver productos</a>
