@@ -526,7 +526,7 @@ img {
    }
 
 /* ---- Fin HOME ----- */
-/* ---- Categorias ----- *//* ---- Categorias ----- */
+/* ---- Categorias ----- */
 
 .ttprod {
     font-family: $titulos;
@@ -565,7 +565,7 @@ img {
 
 .product-line {
     height: 3px;
-    background-color: #0471B4;
+    background-color: $color-principal;
     margin-top: 10px;
 }
 
@@ -593,12 +593,12 @@ img {
 
 /* Hover del botón: se vuelve celeste - MANTENIENDO TU ESTILO ORIGINAL */
 .add-cart-hover:hover {
-    background-color: $azul-activo;
+    background-color: $color-principal;
     color: white;
 }
 
 .lmpfilt {
-    border: solid 2px $azul-activo;
+    border: solid 2px $color-principal;
 }
 
 /* Aside sticky */
@@ -644,7 +644,7 @@ img {
     .product-item {
         margin-bottom: 20px;
         background-color: white; // Fondo blanco
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Sombra suave
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         border-radius: 8px;
         
         .product-info {
