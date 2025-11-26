@@ -73,7 +73,7 @@ get_header();
                 <div class="col-12 col-md-2 mb-3 mb-md-0">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/unboxing.png"
                 class="img-fluid mt-3 icono-proceso" alt="icono-proceso">
-                    <h2 class="color-celeste mt-4">Se recibe</h2>
+                    <h4 class="color-celeste mt-4">Se recibe</h4>
                 </div>
 
                 <!-- Flecha -->
@@ -86,7 +86,7 @@ get_header();
                 <div class="col-12 col-md-2 mb-3 mb-md-0">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/variations.png" class="img-fluid mt-3 icono-proceso"
                         alt=" Icono de clasificación de ropa.">
-                    <h2 class="color-celeste mt-4">Se clasifica</h2>
+                    <h4 class="color-celeste mt-4">Se clasifica</h4>
                 </div>
 
                 <!-- Flecha -->
@@ -99,7 +99,7 @@ get_header();
                 <div class="col-12 col-md-2 mb-3 mb-md-0">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/needle.png" class="img-fluid mt-3 icono-proceso"
                         alt="Icono de confección, una aguja y un botón.">
-                    <h2 class="color-celeste mt-4">Se trabaja</h2>
+                    <h4 class="color-celeste mt-4">Se trabaja</h4>
                 </div>
 
                 <!-- Flecha -->
@@ -112,7 +112,7 @@ get_header();
                 <div class="col-12 col-md-2 mb-3 mb-md-0">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/flowerpot.png" class="img-fluid mt-3 icono-proceso"
                         alt="Icono de producto final, maceta con textil reciclado.">
-                    <h2 class="color-celeste mt-4">Se crea</h2>
+                    <h4 class="color-celeste mt-4">Se crea</h4>
                 </div>
             </div>
         </div>
