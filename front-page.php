@@ -136,6 +136,13 @@ get_header();
                         $precio_id = get_post_meta(get_the_ID(), 'precio_producto_destacado', true);
                         //Descripcion 
                         $descripcion_id =  get_post_meta(get_the_ID(), 'descripcion_producto_destacado', true);
+
+                        global $product;
+
+                        // Ensure visibility.
+                        if ( empty( $product ) || ! $product->is_visible() ) {
+                            return;
+                        }
                     ?>
 
 
@@ -189,7 +196,8 @@ get_header();
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="<?php echo esc_url( '?add-to-cart=' . get_the_ID() ); ?>" class="btn2">Comprar</a>
+                            <button data-product_id="<?php echo esc_attr($product->get_id()); ?>"
+                            data-quantity="1" class="btn2">Comprar</button>
                         </div>
                         <div class="col-md-6">
                             <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="link">Ver productos</a>
