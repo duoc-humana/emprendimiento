@@ -17,7 +17,7 @@
             <i class="fa-brands fa-facebook fa-xl"></i>
         </div>
         <div class="header-right d-flex align-items-center gap-3" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" >
-            <form class="search-container d-flex align-items-center" onsubmit="this.querySelector('input[name=s]').value='';">
+            <form class="search-container d-flex align-items-center">
                 <input type="search" class="search-input form-control" placeholder="Buscar..." value="<?php echo get_search_query(); ?>" name="s">
                 <i class="fa-solid fa-magnifying-glass search-btn fa-2xl"></i>
             </form>

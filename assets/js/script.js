@@ -53,3 +53,10 @@ accordionHeaders.forEach(header => {
         accordionItem.classList.toggle('active');
     });
 });
+
+
+//Reseteo de Input Search
+document.addEventListener('DOMContentLoaded', function() {
+    const campo = document.querySelector('input[name="s"]');
+    if (campo) campo.value = '';
+});
