@@ -12319,7 +12319,7 @@ a {
 }
 
 .color-celeste {
-  color: #0471B4;
+  color: #26364D;
 }
 
 /* +++++ BANNER PRINCIPAL +++++ */
@@ -12366,18 +12366,27 @@ img {
 }
 
 .btn2 {
+<<<<<<< HEAD
   color: #0471B4 !important;
+=======
+  color: #26364D;
+>>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
   padding: 1.438rem 3.5rem;
-  border: 3px solid #0471B4;
+  border: 3px solid #26364D;
   text-decoration: none;
 }
 
 .btn2:hover {
+<<<<<<< HEAD
   color: #ffffff !important;
   background-color: #0471B4 !important;
+=======
+  color: #ffffff;
+  background-color: #26364D;
+>>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
@@ -12478,7 +12487,11 @@ img {
 }
 
 .link:hover {
+<<<<<<< HEAD
   color: #0471B4 !important;
+=======
+  color: #26364D;
+>>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
 }
 
 .bajada-titulo-banner {
@@ -12490,7 +12503,11 @@ img {
 }
 
 .txt-esp1 {
+<<<<<<< HEAD
   color: #0471B4 !important;
+=======
+  color: #26364D;
+>>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
   font-family: "Montserrat", sans-serif;
   line-height: 2.375rem;
   font-size: 1.875rem;
@@ -12891,7 +12908,7 @@ span {
   cursor: pointer;
 }
 .carrito-volver:hover {
-  color: #0471B4;
+  color: #26364D;
 }
 @media (max-width: 768px) {
   .carrito-volver {
@@ -13028,9 +13045,9 @@ span {
   transition: all 0.3s;
 }
 .carrito-item-cantidad button:hover {
-  background-color: #0471B4;
+  background-color: #26364D;
   color: #ffffff;
-  border-color: #0471B4;
+  border-color: #26364D;
 }
 @media (max-width: 768px) {
   .carrito-item-cantidad button {
@@ -13222,12 +13239,12 @@ span {
   border-bottom: 2px solid #E5E5E5;
 }
 .carrito-resumen-linea.envio {
-  color: #0471B4;
+  color: #26364D;
   cursor: pointer;
   text-decoration: underline;
 }
 .carrito-resumen-linea.envio:hover {
-  color: rgb(2.8913043478, 81.6793478261, 130.1086956522);
+  color: rgb(21.147826087, 30.052173913, 42.852173913);
 }
 @media (max-width: 768px) {
   .carrito-resumen-linea {
@@ -13288,12 +13305,16 @@ span {
 }
 
 .carrito-btn-comprar {
+<<<<<<< HEAD
   color: #0471B4 !important;
+=======
+  color: #26364D;
+>>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
   padding: 1.438rem 3.5rem;
-  border: 3px solid #0471B4;
+  border: 3px solid #26364D;
   text-decoration: none;
   background-color: #ffffff;
   width: 100%;
@@ -13301,8 +13322,13 @@ span {
   background-image: none !important;
 }
 .carrito-btn-comprar:hover {
+<<<<<<< HEAD
   color: #ffffff !important;
   background-color: #0471B4 !important;
+=======
+  color: #ffffff;
+  background-color: #26364D;
+>>>>>>> 06cf2fd3cabb6cf1c7dae74140c84cd313f1d8c2
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
