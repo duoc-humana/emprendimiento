@@ -144,7 +144,7 @@ get_header();
                 <div class="col-md-6 img-fondo">
                     <div class="row d-flex justify-content-center align-items-star">
                         <div class="col-md-12 mt-3">
-                            <?php echo $product->get_image(); ?>
+                            <?php echo $product->get_image('full'); ?>
                         </div>
                        
                     </div>
