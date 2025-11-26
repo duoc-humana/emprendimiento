@@ -73,7 +73,6 @@ get_header();
                 <div class="col-12 col-md-2 mb-3 mb-md-0">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/unboxing.png"
                 class="img-fluid mt-3 icono-proceso" alt="icono-proceso">
-                        alt="Icono de recibir ropa donada.">
                     <h2 class="color-celeste mt-4">Se recibe</h2>
                 </div>
 
