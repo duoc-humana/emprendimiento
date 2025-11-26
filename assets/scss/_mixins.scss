@@ -10,7 +10,7 @@
     border: 12px solid $color-fondo;
 }
 @mixin hover-boton-banner{
-    background-color: $azul-activo;
+    background-color:$color-principal;
     color: $color-fondo;
     border: 0.75rem solid $color-fondo;
 }
