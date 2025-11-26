@@ -12571,7 +12571,7 @@ img {
 }
 
 /* ---- Fin HOME ----- */
-/* ---- Categorias ----- */
+/* ---- Categorias ----- */ /* ---- Categorias ----- */
 .ttprod {
   font-family: "Roboto Serif", serif;
 }
@@ -12588,10 +12588,11 @@ img {
   max-height: 207.99px;
 }
 
-.product-name {
+.product-name a {
   font-size: 20px;
   font-weight: 600;
   margin-top: 10px;
+  color: #26364D;
 }
 
 .product-size {
@@ -12607,6 +12608,7 @@ img {
 
 .product-line {
   height: 3px;
+  background-color: #0471B4;
   margin-top: 10px;
 }
 
@@ -12632,13 +12634,20 @@ img {
   transition: 0.3s ease;
 }
 
-/* Hover del botón: se vuelve celeste */
+/* Hover del botón: se vuelve celeste - MANTENIENDO TU ESTILO ORIGINAL */
 .add-cart-hover:hover {
+  background-color: #0471B4;
   color: white;
 }
 
 .lmpfilt {
   border: solid 2px #0471B4;
+}
+
+/* Aside sticky */
+.filter-sticky {
+  position: sticky;
+  top: 20px;
 }
 
 /* ---- ESTRUCTURA GRID RESPONSIVE ---- */
@@ -12686,7 +12695,7 @@ img {
     padding: 12px;
     border-radius: 0 0 8px 8px;
   }
-  .product-name {
+  .product-name a {
     font-size: 18px;
   }
   .product-img {
@@ -12711,6 +12720,7 @@ img {
   }
   .product-line {
     display: block;
+    background-color: #0471B4;
   }
 }
 /* ---- MOBILE (<= 768px) ---- */
@@ -12751,9 +12761,11 @@ img {
   }
   .product-line {
     display: block;
+    background-color: #0471B4;
   }
-  .product-name {
+  .product-name a {
     font-size: 16px;
+    color: #26364D;
   }
   .product-price {
     font-size: 16px;
