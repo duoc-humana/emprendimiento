@@ -36,14 +36,14 @@ body{
         font-family: $titulos;
         font-size: 2.5rem; //40px
         font-weight: 900;
-        color:$color-principal;
+        color:$color-principal !important;
         line-height: 3rem;
     }
     h2{
         font-family: $titulos;
         font-size: 2rem;  //32px
         font-weight: 700;
-        color:$color-principal;
+        color:$color-principal !important;
         line-height: 2.5rem;
         
     }
@@ -51,21 +51,21 @@ body{
         font-family: $titulos;
         font-size: 1.625rem;  //26px
         font-weight: 600;
-        color:$color-principal;
+        color:$color-principal !important;
         line-height: 2rem;
     }
     h4{
         font-family: $titulos;
         font-size: 1.25rem;  //20px
         font-weight: 500;
-        color:$color-principal;
+        color:$color-principal !important;
         line-height: 1.75rem;
     }
     p{
         font-family: $parrafos;
         font-size: 1rem;   //16px
         font-weight: 400;
-        color:$color-principal;
+        color:$color-principal !important;
         line-height: 1.5rem;
     }
 

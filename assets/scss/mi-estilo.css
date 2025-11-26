@@ -11990,35 +11990,35 @@ body h1, body .h1 {
   font-family: "Roboto Serif", serif;
   font-size: 2.5rem;
   font-weight: 900;
-  color: #26364D;
+  color: #26364D !important;
   line-height: 3rem;
 }
 body h2, body .h2 {
   font-family: "Roboto Serif", serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #26364D;
+  color: #26364D !important;
   line-height: 2.5rem;
 }
 body h3, body .h3 {
   font-family: "Roboto Serif", serif;
   font-size: 1.625rem;
   font-weight: 600;
-  color: #26364D;
+  color: #26364D !important;
   line-height: 2rem;
 }
 body h4, body .h4 {
   font-family: "Roboto Serif", serif;
   font-size: 1.25rem;
   font-weight: 500;
-  color: #26364D;
+  color: #26364D !important;
   line-height: 1.75rem;
 }
 body p {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  color: #26364D;
+  color: #26364D !important;
   line-height: 1.5rem;
 }
 
@@ -12366,7 +12366,7 @@ img {
 }
 
 .btn2 {
-  color: #0471B4;
+  color: #0471B4 !important;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
@@ -12376,8 +12376,8 @@ img {
 }
 
 .btn2:hover {
-  color: #ffffff;
-  background-color: #0471B4;
+  color: #ffffff !important;
+  background-color: #0471B4 !important;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
@@ -12473,12 +12473,12 @@ img {
 }
 
 .link {
-  color: #26364D;
+  color: #26364D !important;
   text-decoration: underline;
 }
 
 .link:hover {
-  color: #0471B4;
+  color: #0471B4 !important;
 }
 
 .bajada-titulo-banner {
@@ -12490,7 +12490,7 @@ img {
 }
 
 .txt-esp1 {
-  color: #0471B4;
+  color: #0471B4 !important;
   font-family: "Montserrat", sans-serif;
   line-height: 2.375rem;
   font-size: 1.875rem;
@@ -12498,7 +12498,7 @@ img {
 }
 
 .txt-esp2 {
-  color: #26364D;
+  color: #26364D !important;
   font-family: "Montserrat", sans-serif;
   line-height: 2.375rem;
   font-size: 1.875rem;
@@ -12506,7 +12506,7 @@ img {
 }
 
 .txt-esp3 {
-  color: #26364D;
+  color: #26364D !important;
   font-family: "Montserrat", sans-serif;
   line-height: 2.5rem;
   font-size: 2rem;
@@ -13288,7 +13288,7 @@ span {
 }
 
 .carrito-btn-comprar {
-  color: #0471B4;
+  color: #0471B4 !important;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
@@ -13301,8 +13301,8 @@ span {
   background-image: none !important;
 }
 .carrito-btn-comprar:hover {
-  color: #ffffff;
-  background-color: #0471B4;
+  color: #ffffff !important;
+  background-color: #0471B4 !important;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;

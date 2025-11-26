@@ -416,12 +416,12 @@ img {
 //LINKS +++++++++++ 
 
 .link {
-    color: $color-principal;
+    color: $color-principal !important;
     text-decoration: underline;
 }
 
 .link:hover {
-    color: $azul-activo;
+    color: $azul-activo !important;
 }
 
 //TEXTOS "ESPECIALES" 
@@ -435,7 +435,7 @@ img {
 
 //Texto producto destacado
 .txt-esp1 {
-    color: $azul-activo;
+    color: $azul-activo !important;
     font-family: $parrafos;
     line-height: 2.375rem;
     font-size: 1.875rem;
@@ -443,7 +443,7 @@ img {
 }
 
 .txt-esp2 {
-    color: $color-principal;
+    color: $color-principal !important;
     font-family: $parrafos;
     line-height: 2.375rem;
     font-size: 1.875rem;
@@ -451,7 +451,7 @@ img {
 }
 
 .txt-esp3 {
-    color: $color-principal;
+    color: $color-principal !important;
     font-family: $parrafos;
     line-height: 2.5rem;
     font-size: 2rem;
