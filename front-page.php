@@ -122,22 +122,31 @@ get_header();
                 <?php
                     $query = new WP_Query(array(
                         'post_type' => 'producto_home',
-                        'posts_per_page' => -1
+                        'posts_per_page' => 1
                     ));
 
                     while ($query->have_posts()) :
                         $query->the_post();
+                        //Imagen
                         $id_imagen = get_post_meta(get_the_ID(), 'imagen_de_producto_destacado', true);
                         $img_destacado = wp_get_attachment_url($id_imagen);
+                        //Titulo 
+                        $titulo_id = get_the_title();
+                        //Precio
+                        $precio_id = get_post_meta(get_the_ID(), 'precio_producto_destacado', true);
+                        //Descripcion 
+                        $descripcion_id =  get_post_meta(get_the_ID(), 'descripcion_producto_destacado', true);
                     ?>
 
 
                 <div class="col-md-6 img-fondo">
                     <div class="row d-flex justify-content-center align-items-star">
                         <div class="col-md-12 mt-3">
+                            <?php if ($img_destacado): ?>
                             <img src="<?php echo esc_url($img_destacado); ?>" alt="">
+                            <?php endif; ?>
                         </div>
-                        <?php endwhile; wp_reset_postdata(); ?>
+                       
                     </div>
                     <div class="row">
                         <div class="col-md-5 d-flex justify-content-center">
@@ -161,31 +170,33 @@ get_header();
                 <div class="col-md-6 ps-5">
                     <div class="row esp4 mt-5">
                         <div class="col-md-12">
-                            <h2>Maceta con material reciclado</h2>
+                            <h2><?php echo esc_html($titulo_id); ?></h2>
                         </div>
                     </div>
                     <div class="row esp4">
                         <div class="col-md-12">
-                            <span class="txt-esp3">$990</span>
+                            <?php if ($precio_id): ?>
+                            <span class="txt-esp3">$<?php echo esc_html($precio_id); ?></span>
+                            <?php endif; ?>
                         </div>
                     </div>
                     <div class="row esp5">
                         <div>
-                            <p>Esta maceta esta hecha con material reciclado, elaborado con materiales<br> a base de
-                                jeans.</p>
+                             <?php if ($descripcion_id): ?>
+                            <p><?php echo wp_kses_post($descripcion_id); ?></p>
+                            <?php endif; ?>
                         </div>
                     </div>
-                    
                     <div class="row">
                         <div class="col-md-6">
-                            <a href="#" class="btn2">Comprar</a>
+                            <a href="<?php echo esc_url( '?add-to-cart=' . get_the_ID() ); ?>" class="btn2">Comprar</a>
                         </div>
                         <div class="col-md-6">
-                            <a href="#" class="link">Ver productos</a>
+                            <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="link">Ver productos</a>
                         </div>
                     </div>
                 </div>
-                
+                <?php endwhile; wp_reset_postdata(); ?>
             </div>
         </div>
 
