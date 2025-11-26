@@ -526,9 +526,7 @@ img {
    }
 
 /* ---- Fin HOME ----- */
-
 /* ---- Categorias ----- */
-
 
 .ttprod {
     font-family: $titulos;
@@ -536,37 +534,45 @@ img {
 
 .product-item {
     border-radius: 8px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f0f0f0;
+    background-color: $color-fondo;
 }
-
 
 .product-img {
     width: 100%;
-    border-radius: 6px;
+    border-radius: 6px 6px 0 0;
     object-fit: contain !important;
     max-height: 207.99px;
+    background: transparent !important;
+    display: block;
 }
 
 .product-name {
     font-size: 20px;
     font-weight: 600;
     margin-top: 10px;
+    color: $color-principal;
 }
 
 .product-size {
     font-size: 16px;
     color: gray;
+    margin-bottom: 8px;
 }
 
 .product-price {
     font-size: 18px;
     font-weight: 600;
     margin-top: 10px;
+    color: $azul-activo;
 }
-
 
 .product-line {
     height: 3px;
-    background-color: #1a73e8;
+    background-color: $azul-activo;
     margin-top: 10px;
 }
 
@@ -574,53 +580,145 @@ img {
 .add-cart-hover {
     position: relative;
     display: flex;
-    /* Centrado perfecto */
     justify-content: center;
     align-items: center;
-
     width: 100%;
-    /* ✔ Se adapta al contenedor */
     height: 40px;
-
-    background-color: white;
-    /* Fondo blanco por defecto */
-    color: white;
-    /* Texto blanco (lo que pediste) */
-
+    background-color: $color-fondo;
+    color: $azul-activo;
     padding: 6px 12px;
-    border-bottom-left-radius: 22px;
-    border-bottom-right-radius: 22px;
-
+    border-radius: 22px;
     font-size: 14px;
-    border: none;
+    border: 2px solid $azul-activo;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    cursor: pointer;
 
-    transition: 0.3s ease;
-}
-
-/* Hover del botón: se vuelve celeste */
-.add-cart-hover:hover {
-    background-color: #1a73e8;
-    color: white;
+    &:hover {
+        background-color: $azul-activo;
+        color: $color-fondo;
+    }
 }
 
 .lmpfilt {
-    border: solid 2px #0471B4;
+    border: solid 2px $azul-activo;
+    color: $azul-activo;
+    
+    &:hover {
+        background-color: $azul-activo;
+        color: $color-fondo;
+    }
 }
 
+/* ---- ESTRUCTURA GRID RESPONSIVE ---- */
+.products-grid {
+    display: grid;
+    gap: 20px;
+    
+    // Desktop - 4 columnas
+    @media (min-width: 1200px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    // Desktop pequeño - 3 columnas
+    @media (max-width: 1199px) and (min-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    // Tablet - 2 columnas
+    @media (max-width: 991px) and (min-width: 769px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    // Mobile - 2 COLUMNAS como pediste
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    // Móviles muy pequeños - 1 columna
+    @media (max-width: 480px) {
+        grid-template-columns: 1fr;
+    }
+}
 
+/* ---- MOBILE (<= 768px) ---- */
+@media (max-width: 768px) {
+    .product-item {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-bottom: 0; // El gap del grid se encarga
+        
+        .product-info {
+            background-color: $color-fondo !important; // Fondo blanco
+            padding: 12px;
+            border-radius: 0 0 8px 8px;
+        }
+    }
+
+    /* Botón mantiene mismo estilo que desktop */
+    .product-item .add-cart-hover {
+        background-color: $color-fondo !important;
+        color: $azul-activo !important;
+        border: 2px solid $azul-activo !important;
+        width: 100%;
+        height: 36px;
+        font-size: 13px;
+        
+        // Efecto al presionar en móvil
+        &:active {
+            background-color: $azul-activo !important;
+            color: $color-fondo !important;
+            transform: scale(0.98);
+        }
+    }
+
+    /* Asegurar que la imagen no herede fondo */
+    .product-img {
+        background: transparent !important;
+        display: block;
+        width: 100%;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .add-cart-hover {
+        border-radius: 22px;
+    }
+
+    .product-line {
+        display: block; // Mantener visible
+    }
+    
+    .product-name {
+        font-size: 16px;
+    }
+    
+    .product-price {
+        font-size: 16px;
+    }
+    
+    .product-size {
+        font-size: 14px;
+    }
+}
 
 /* Botón visible solo en móviles */
 .filter-toggle-btn {
     display: none;
     width: 100%;
     padding: 12px;
-    background: #E8F3FF;
-    color: black;
-    border: none;
+    background: $color-fondo;
+    color: $color-principal;
+    border: 2px solid $azul-activo;
     border-radius: 8px;
-    font-size: 18px;
-    margin-right: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
 
+    &:hover {
+        background-color: $azul-activo;
+        color: $color-fondo;
+    }
 }
 
 //Ocultamos el aside por defecto en móviles 
@@ -643,62 +741,12 @@ img {
             opacity: 0;
             transform: translateY(-10px);
         }
-
         to {
             opacity: 1;
             transform: translateY(0);
         }
     }
 }
-
-
-
-
-/* Estilos mobile (<= 768px) */
-@media (max-width: 768px) {
-    .product-item {
-        box-shadow: 4px 5px 5px rgb(190, 190, 190);
-        border-radius: 22px 22px 22px 22px;
-    }
-
-    /* Parte inferior con fondo celeste */
-    .product-item .product-info {
-        background-color: #E8F3FF;
-        padding: 15px;
-        border-radius: 0 0 10px 10px;
-        /* redondeo inferior */
-    }
-
-    /* Botón azul en mobile */
-    .product-item .add-cart-hover {
-        background-color: #007bff !important;
-        color: white !important;
-        border: none;
-        width: 100%;
-    }
-
-    .product-item .add-cart-hover:hover {
-        background-color: #006ae0 !important;
-    }
-
-    /* Asegurar que la imagen no herede fondo */
-    .product-img {
-        background: transparent !important;
-        display: block;
-        width: 100%;
-        border-radius: 10px 10px 0 0;
-        /* redondeo superior */
-    }
-
-    .add-cart-hover {
-        border-radius: 11px;
-    }
-
-    .product-line {
-        display: none;
-    }
-}
-
 
 
 /* Single producto */
