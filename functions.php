@@ -111,3 +111,14 @@ function cpt_producto_home() {
     ));
 }
 add_action('init', 'cpt_producto_home'); 
+
+//Sub menú de producto destacado
+add_action('admin_menu', function() {
+    add_submenu_page(
+        'woocommerce', // menú padre
+        'Producto destacado', // título de la página
+        'Producto destacado', // texto del menú
+        'manage_woocommerce', // capacidad
+        'edit.php?post_type=product&product_visibility=featured' // URL destino
+    );
+});
