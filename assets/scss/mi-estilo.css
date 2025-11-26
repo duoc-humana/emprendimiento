@@ -12319,7 +12319,7 @@ a {
 }
 
 .color-celeste {
-  color: #26364D;
+  color: #0471B4;
 }
 
 /* +++++ BANNER PRINCIPAL +++++ */
@@ -12366,18 +12366,18 @@ img {
 }
 
 .btn2 {
-  color: #26364D;
+  color: #0471B4;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
   padding: 1.438rem 3.5rem;
-  border: 3px solid #26364D;
+  border: 3px solid #0471B4;
   text-decoration: none;
 }
 
 .btn2:hover {
   color: #ffffff;
-  background-color: #26364D;
+  background-color: #0471B4;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
@@ -12478,7 +12478,7 @@ img {
 }
 
 .link:hover {
-  color: #26364D;
+  color: #0471B4;
 }
 
 .bajada-titulo-banner {
@@ -12490,7 +12490,7 @@ img {
 }
 
 .txt-esp1 {
-  color: #26364D;
+  color: #0471B4;
   font-family: "Montserrat", sans-serif;
   line-height: 2.375rem;
   font-size: 1.875rem;
@@ -12891,7 +12891,7 @@ span {
   cursor: pointer;
 }
 .carrito-volver:hover {
-  color: #26364D;
+  color: #0471B4;
 }
 @media (max-width: 768px) {
   .carrito-volver {
@@ -13028,9 +13028,9 @@ span {
   transition: all 0.3s;
 }
 .carrito-item-cantidad button:hover {
-  background-color: #26364D;
+  background-color: #0471B4;
   color: #ffffff;
-  border-color: #26364D;
+  border-color: #0471B4;
 }
 @media (max-width: 768px) {
   .carrito-item-cantidad button {
@@ -13222,12 +13222,12 @@ span {
   border-bottom: 2px solid #E5E5E5;
 }
 .carrito-resumen-linea.envio {
-  color: #26364D;
+  color: #0471B4;
   cursor: pointer;
   text-decoration: underline;
 }
 .carrito-resumen-linea.envio:hover {
-  color: rgb(21.147826087, 30.052173913, 42.852173913);
+  color: rgb(2.8913043478, 81.6793478261, 130.1086956522);
 }
 @media (max-width: 768px) {
   .carrito-resumen-linea {
@@ -13288,12 +13288,12 @@ span {
 }
 
 .carrito-btn-comprar {
-  color: #26364D;
+  color: #0471B4;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
   padding: 1.438rem 3.5rem;
-  border: 3px solid #26364D;
+  border: 3px solid #0471B4;
   text-decoration: none;
   background-color: #ffffff;
   width: 100%;
@@ -13302,7 +13302,7 @@ span {
 }
 .carrito-btn-comprar:hover {
   color: #ffffff;
-  background-color: #26364D;
+  background-color: #0471B4;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
