@@ -100,18 +100,6 @@ function cpt_secciones_home() {
 }
 add_action('init', 'cpt_secciones_home');
 
-//CPT de producto destacado en el home
-function cpt_producto_home() {
-    register_post_type('producto_home', array(
-        'label' => 'Producto Destacado Home',
-        'public' => true,
-        'menu_icon' => 'dashicons-admin-home',
-        'show_ui' => true,
-        'supports' => array('title'),
-    ));
-}
-add_action('init', 'cpt_producto_home'); 
-
 //Sub menú de producto destacado
 add_action('admin_menu', function() {
     add_submenu_page(
