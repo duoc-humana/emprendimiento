@@ -542,7 +542,7 @@ img {
 .product-img {
     width: 100%;
     border-radius: 6px;
-    object-fit: contain;
+    object-fit: contain !important;
 }
 
 .product-name {
