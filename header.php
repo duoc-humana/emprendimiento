@@ -19,7 +19,6 @@
         <div class="header-right d-flex align-items-center gap-3" role="search" method="get" action="<?php echo esc_url( home_url( '/' ) ); ?>" >
             <form class="search-container d-flex align-items-center">
                 <input type="search" class="search-input form-control" placeholder="Buscar..." value="<?php echo get_search_query(); ?>" name="s">
-                <button class="btn btn-primary" type="submit">Buscar</button>
                 <i class="fa-solid fa-magnifying-glass search-btn fa-2xl"></i>
             </form>
            <a href="<?php echo wc_get_cart_url(); ?>" class="position-relative">
