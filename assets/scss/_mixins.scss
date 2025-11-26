@@ -24,7 +24,7 @@
     border: none;
 }
 @mixin boton-general{
-    color: $azul-activo !important;
+    color: $azul-activo;
     font-family: $parrafos;
     font-size: $fuente-boton;
     border-radius: 22px;
@@ -34,8 +34,8 @@
 }
 
 @mixin boton-general-hover{
-     color: $color-fondo !important;
-     background-color: $azul-activo !important;
+     color: $color-fondo;
+     background-color: $azul-activo;
     font-family: $parrafos;
     font-size: $fuente-boton;
     border-radius: 22px;
