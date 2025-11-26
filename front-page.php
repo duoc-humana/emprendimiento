@@ -116,7 +116,7 @@ get_header();
                 </div>
             </div>
         </div>
-<!--PRODUCTO DESTACADO +++++++++++++++++++-->
+<!--PRODUCTO DESTACADO ++++++++++++++++++-->
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 img-fondo">
