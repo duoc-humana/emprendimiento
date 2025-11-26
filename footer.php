@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer esp2">
     <div class="footer-content">
 
         <!-- Sección 1 -->
