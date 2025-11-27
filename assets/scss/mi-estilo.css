@@ -12369,6 +12369,7 @@ img {
   color: #0471B4;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
+  font-weight: 600;
   border-radius: 22px;
   padding: 1.438rem 3.5rem;
   border: 3px solid #0471B4;
@@ -12378,6 +12379,7 @@ img {
 .btn2:hover {
   color: #ffffff;
   background-color: #0471B4;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
@@ -13291,6 +13293,7 @@ span {
   color: #0471B4;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
+  font-weight: 600;
   border-radius: 22px;
   padding: 1.438rem 3.5rem;
   border: 3px solid #0471B4;
@@ -13303,6 +13306,7 @@ span {
 .carrito-btn-comprar:hover {
   color: #ffffff;
   background-color: #0471B4;
+  font-weight: 600;
   font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   border-radius: 22px;
