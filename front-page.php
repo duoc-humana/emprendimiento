@@ -198,15 +198,24 @@ get_header();
             <!-- Bloques de categorias -->
              <div class="row esp3 d-flex justify-content-center d-none d-md-flex">
                 <div class="col-md-3">
-                    <a href="#" class="btn3">Maceteros</a>
+                    <?php 
+                    $category_macetas = get_term_link( 'maceteros', 'product_cat' ); 
+                    ?>
+                    <a href="<?php echo esc_url( $category_macetas ); ?>" class="btn3">Maceteros</a>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
-                    <a href="#" class="btn4">Confección</a>
+                    <?php 
+                    $category_confeccion = get_term_link( 'confeccion', 'product_cat' ); 
+                    ?>
+                    <a href="<?php echo esc_url( $category_confeccion ); ?>" class="btn4">Confección</a>
                 </div>
                 <div class="col-md-1"></div>
                 <div class="col-md-3">
-                    <a href="#" class="btn5">Revestimiento</a>
+                    <?php 
+                    $category_revestimiento = get_term_link( 'revestimiento', 'product_cat' ); 
+                    ?>
+                    <a href="<?php echo esc_url( $category_revestimiento ); ?>" class="btn5">Revestimiento</a>
                 </div>
             </div>
 
