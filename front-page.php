@@ -224,17 +224,26 @@ get_header();
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="d-flex justify-content-center contebotonmovl">
-                            <a href="#" class="btn3 textbtn">Maceteros</a>
+                             <?php 
+                            $category_macetas_rs = get_term_link( 'maceteros', 'product_cat' ); 
+                            ?>
+                            <a href="<?php echo esc_url( $category_macetas_rs ); ?>" class="btn3 textbtn">Maceteros</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center contebotonmovl">
-                            <a href="#" class="btn4 textbtn">Confección</a>
+                            <?php 
+                            $category_confeccion_rs = get_term_link( 'confeccion', 'product_cat' ); 
+                            ?>
+                            <a href="<?php echo esc_url( $category_confeccion_rs ); ?>" class="btn4 textbtn">Confección</a>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center contebotonmovl">
-                            <a href="#" class="btn5 textbtn">Revestimiento</a>
+                           <?php 
+                            $category_revestimiento_rs = get_term_link( 'revestimiento', 'product_cat' ); 
+                            ?>
+                            <a href="<?php echo esc_url( $category_revestimiento_rs ); ?>" class="btn5 textbtn">Revestimiento</a>
                         </div>
                     </div>
                 </div>
