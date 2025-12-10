@@ -87,7 +87,7 @@ get_header();
                             <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
                         </div>
                     </div>
-                    
+                    <button type="submit" class="boton-enviar-sy">Enviar</button>
                 </form>
                 </div>
                 
