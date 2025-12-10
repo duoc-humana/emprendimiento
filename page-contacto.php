@@ -51,7 +51,7 @@ get_header();
             </div>
             <div class="row">
                 <p class="py-3">No dudes en comunicarte con el equipo Recicla2, estaremos felices de resolver cualquier duda que tengas sobre nuestros productos, procesos y proyectos especiales</p>
-                <ul>
+                <ul class="ps-5">
                     <li class="fw-light">Diferentes medios de pago</li>
                     <li class="fw-light">Plazo de respuesta de 1 a 3 días hábiles.</li>
                 </ul>
