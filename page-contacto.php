@@ -52,38 +52,38 @@ get_header();
             <div class="row">
                 <p class="py-3">No dudes en comunicarte con el equipo Recicla2, estaremos felices de resolver cualquier duda que tengas sobre nuestros productos, procesos y proyectos especiales</p>
                 <ul>
-                    <li>Diferentes medios de pago</li>
-                    <li>Plazo de respuesta de 1 a 3 días hábiles.</li>
+                    <li class="fw-light">Diferentes medios de pago</li>
+                    <li class="fw-light">Plazo de respuesta de 1 a 3 días hábiles.</li>
                 </ul>
             </div>
-            <div class="row">
+            <div class="row mt-3">
                 <div class="col-12">
                     <form action="post">
-                    <div class="row">
+                    <div class="row my-3">
                     <div class="col">
-                        <label for="nombre">Nombre y Apellido</label>
+                        <label for="nombre" class="fw-light">Nombre y Apellido</label>
                         <input id="nombre" class="form-control" type="text">  
                     </div>
                     <div class="col">
-                        <label for="telefono">Teléfono</label>
+                        <label for="telefono" class="fw-light">Teléfono</label>
                         <input type="tel" class="form-control" name="telefono" id="telefono">
                     </div>
                     </div>
-                    <div class="row">
+                    <div class="row my-3">
                         <div class="col">
-                            <label for="mail">Correo electrónico</label>
+                            <label for="mail" class="fw-light">Correo electrónico</label>
                             <input type="email" class="form-control" name="email" id="mail">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row my-3">
                         <div class="col">
-                            <label for="asunto">Asunto</label>
+                            <label for="asunto" class="fw-light">Asunto</label>
                             <input id="asunto" class="form-control" type="text">
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row my-3">
                         <div class="col">
-                            <label for="mensaje">Escribe tu mensaje</label>
+                            <label for="mensaje" class="fw-light">Escribe tu mensaje</label>
                             <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
                         </div>
                     </div>
