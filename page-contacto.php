@@ -15,7 +15,7 @@ get_header();
     <div class="row">
         <div class="col-6">
             <div class="row">
-                <img src="assets/img/icono-ubicacion.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/icono-ubicacion.png" alt="">
             </div>
         </div>
         <div class="col-6"></div>
