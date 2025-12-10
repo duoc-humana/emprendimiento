@@ -57,28 +57,40 @@ get_header();
                 </ul>
             </div>
             <div class="row">
-                <form action="post">
-                    <div class="col-6">
+                <div class="col-12">
+                    <form action="post">
+                    <div class="row">
+                    <div class="col">
                         <label for="nombre">Nombre y Apellido</label>
-                        <input id="nombre" type="text">  
+                        <input id="nombre" class="form-control" type="text">  
                     </div>
-                    <div class="col-6">
+                    <div class="col">
                         <label for="telefono">Teléfono</label>
-                        <input type="tel" name="telefono" id="telefono">
+                        <input type="tel" class="form-control" name="telefono" id="telefono">
                     </div>
-                    <div class="col-12">
-                        <label for="mail">Correo electrónico</label>
-                        <input type="email" name="email" id="mail">
                     </div>
-                    <div class="col-12">
-                        <label for="asunto">Asunto</label>
-                        <input id="asunto" type="text">
+                    <div class="row">
+                        <div class="col">
+                            <label for="mail">Correo electrónico</label>
+                            <input type="email" class="form-control" name="email" id="mail">
+                        </div>
                     </div>
-                    <div class="col-12">
-                        <label for="mensaje">Escribe tu mensaje</label>
-                        <textarea name="mensaje" id="mensaje"></textarea>
+                    <div class="row">
+                        <div class="col">
+                            <label for="asunto">Asunto</label>
+                            <input id="asunto" class="form-control" type="text">
+                        </div>
                     </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="mensaje">Escribe tu mensaje</label>
+                            <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
+                        </div>
+                    </div>
+                    
                 </form>
+                </div>
+                
             </div>
         </div>
     </div>
