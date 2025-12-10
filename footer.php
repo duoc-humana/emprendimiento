@@ -11,7 +11,7 @@
 
             <div class="accordion-body">
                 <ul>
-                    <li>Quienes somos</li>
+                    <li class="color-blanco">Quienes somos</li>
                     <li>Servicios</li>
                 </ul>
             </div>
