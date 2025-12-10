@@ -29,16 +29,16 @@ get_header();
         <!-- CONTENIDO DEL TAB -->
         <div class="tab-content-box">
             <div class="tab-panel active" id="tab1">
-                <h3 class="tab-title">Transformamos desechos textiles en oportunidades para un futuro sostenible.</h3>
-                <p class="tab-text">Nuestro Propósito: Darle un futuro sostenible a tu ropa. Transformamos tus desechos textiles en recursos valiosos, reduciendo la contaminación y creando un impacto tangible. Juntos, cerramos el ciclo de la moda de forma responsable e innovadora.</p>
+                <h3 class="tab-title color-blanco">Transformamos desechos textiles en oportunidades para un futuro sostenible.</h3>
+                <p class="tab-text color-blanco">Nuestro Propósito: Darle un futuro sostenible a tu ropa. Transformamos tus desechos textiles en recursos valiosos, reduciendo la contaminación y creando un impacto tangible. Juntos, cerramos el ciclo de la moda de forma responsable e innovadora.</p>
             </div>
             <div class="tab-panel" id="tab2">
-                <h3 class="tab-title">Quince años transformando el desecho textil en valor sostenible real.”</h3>
-                <p class="tab-text">Nuestra historia: Hace quince años, un problema doméstico inspiró una solución. Convertimos la acumulación de prendas en desuso en un proyecto de impacto ambiental y social. Con esfuerzo y constancia, crecimos hasta consolidarnos como referente en reciclaje textil, innovación y compromiso comunitario.</p>
+                <h3 class="tab-title color-blanco">Quince años transformando el desecho textil en valor sostenible real.”</h3>
+                <p class="tab-text color-blanco">Nuestra historia: Hace quince años, un problema doméstico inspiró una solución. Convertimos la acumulación de prendas en desuso en un proyecto de impacto ambiental y social. Con esfuerzo y constancia, crecimos hasta consolidarnos como referente en reciclaje textil, innovación y compromiso comunitario.</p>
             </div>
             <div class="tab-panel" id="tab3">
-                <h3 class="tab-title">Lideramos la innovación textil con propósito, comunidad y sustentabilidad.</h3>
-                <p class="tab-text">Nuestra innovación: Desde nuestros talleres impulsamos un modelo productivo que une diseño, reciclaje y responsabilidad social. Damos nueva vida a las fibras en desuso, transformándolas en productos útiles y ecológicos que contribuyen activamente al desarrollo sostenible del país.</p>
+                <h3 class="tab-title color-blanco">Lideramos la innovación textil con propósito, comunidad y sustentabilidad.</h3>
+                <p class="tab-text color-blanco">Nuestra innovación: Desde nuestros talleres impulsamos un modelo productivo que une diseño, reciclaje y responsabilidad social. Damos nueva vida a las fibras en desuso, transformándolas en productos útiles y ecológicos que contribuyen activamente al desarrollo sostenible del país.</p>
             </div>
         </div>
         

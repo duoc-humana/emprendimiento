@@ -12,7 +12,7 @@
             <div class="accordion-body">
                 <ul>
                     <li class="color-blanco">Quienes somos</li>
-                    <li>Servicios</li>
+                    <li class="color-blanco">Servicios</li>
                 </ul>
             </div>
         </div>
@@ -27,9 +27,9 @@
 
             <div class="accordion-body">
                 <ul>
-                    <li>Maceteros</li>
-                    <li>Confecciones</li>
-                    <li>Revestimiento</li>
+                    <li class="color-blanco">Maceteros</li>
+                    <li class="color-blanco">Confecciones</li>
+                    <li class="color-blanco">Revestimiento</li>
                 </ul>
             </div>
         </div>
@@ -44,8 +44,8 @@
 
             <div class="accordion-body">
                 <ul>
-                    <li>consuelomiranda@gmail.com</li>
-                    <li>WhatsApp: +56 9 3267 9682</li>
+                    <li class="color-blanco">consuelomiranda@gmail.com</li>
+                    <li class="color-blanco">WhatsApp: +56 9 3267 9682</li>
                 </ul>
 
                 <div class="social-icons">
@@ -64,7 +64,7 @@
     </div>
 
     <div class="footer-bottom linemarca">
-        <p>© 2025 Recicla2 — Todos los derechos reservados.</p>
+        <p class="color-blanco">© 2025 Recicla2 — Todos los derechos reservados.</p>
     </div>
 </footer>
 
