@@ -55,64 +55,61 @@ get_header();
     <h2>Proceso de confección</h2>
   <div class="workflow-slider">
     <div class="workflow-track" id="workflow-track">
-
     <article class="workflow-card" active>
-    <img class="workflow-card__bg" src="assets/img/revestimiento-boton.jpeg" alt="">
+    <img class="workflow-card__bg" src="<?php echo get_template_directory_uri(); ?>/assets/img/01_conf.jpg" alt="Proceso 01">
     <div class="workflow-card__content">
         <span class="workflow-card__number">01</span>
         <h3 class="workflow-card__title">Recepción y Clasificación</h3>
         <p class="workflow-card__desc">Recepción del textil, pesaje, registro de origen y separación por tipo de fibra para asegurar calidad del material.</p>
     </div>
     </article>
-
+    
     <article class="workflow-card">
-    <img class="workflow-card__bg" src="assets/img/revestimiento-boton.jpeg" alt="">
-    <div class="workflow-card__content">
-        <span class="workflow-card__number">02</span>
-        <h3 class="workflow-card__title">Preparación del Material</h3>
-        <p class="workflow-card__desc">Desarme, corte y acondicionamiento del textil para eliminar cierres, broches o elementos no reciclables.</p>  
-    </div>
+        <img class="workflow-card__bg" src="<?php echo get_template_directory_uri(); ?>/assets/img/02_conf.jpg" alt="Proceso 02">
+        <div class="workflow-card__content">
+            <span class="workflow-card__number">02</span>
+            <h3 class="workflow-card__title">Preparación del Material</h3>
+            <p class="workflow-card__desc">Desarme, corte y acondicionamiento del textil para eliminar cierres, broches o elementos no reciclables.</p>
+        </div>
     </article>
-
+    
     <article class="workflow-card">
-    <img class="workflow-card__bg" src="assets/img/revestimiento-boton.jpeg" alt="">
-    <div class="workflow-card__content">
-        <span class="workflow-card__number">03</span>
-        <h3 class="workflow-card__title">Desfibrado y Mezcla</h3>
-        <p class="workflow-card__desc">Reducción mecánica de la prenda a fibras y mezcla con aglomerante creados y patentados por nosotros, para estabilizar la estructura.</p>
-    </div>
+        <img class="workflow-card__bg" src="<?php echo get_template_directory_uri(); ?>/assets/img/03_conf.jpg" alt="Proceso 03">
+        <div class="workflow-card__content">
+            <span class="workflow-card__number">03</span>
+            <h3 class="workflow-card__title">Desfibrado y Mezcla</h3>
+            <p class="workflow-card__desc">Reducción mecánica de la prenda a fibras y mezcla con aglomerante creado por nosotros para estabilizar la estructura.</p>
+        </div>
     </article>
-
+    
     <article class="workflow-card">
-    <img class="workflow-card__bg" src="assets/img/revestimiento-boton.jpeg" alt="">
-    <div class="workflow-card__content">
-        <span class="workflow-card__number">04</span>
-        <h3 class="workflow-card__title">Moldeado y Compactación</h3>
-        <p class="workflow-card__desc">Ingreso del material a moldes específicos y compactación controlada para dar forma y resistencia.</p>
-    </div>
+        <img class="workflow-card__bg" src="<?php echo get_template_directory_uri(); ?>/assets/img/04_conf.jpg" alt="Proceso 04">
+        <div class="workflow-card__content">
+            <span class="workflow-card__number">04</span>
+            <h3 class="workflow-card__title">Moldeado y Compactación</h3>
+            <p class="workflow-card__desc">Ingreso del material a moldes específicos y compactación controlada para dar forma y resistencia.</p>
+        </div>
     </article>
-
+    
     <article class="workflow-card">
-    <img class="workflow-card__bg" src="assets/img/revestimiento-boton.jpeg" alt="">
-    <div class="workflow-card__content">
-        <span class="workflow-card__number">05</span>
-        <h3 class="workflow-card__title">Curado y Acabado</h3>
-        <p class="workflow-card__desc">Secado, estabilización del material y revisión de calidad. Aplicación de terminaciones si corresponde.</p>
-    </div>
+        <img class="workflow-card__bg" src="<?php echo get_template_directory_uri(); ?>/assets/img/05_conf.jpg" alt="Proceso 05">
+        <div class="workflow-card__content">
+            <span class="workflow-card__number">05</span>
+            <h3 class="workflow-card__title">Curado y Acabado</h3>
+            <p class="workflow-card__desc">Secado, estabilización del material y revisión de calidad. Aplicación de terminaciones si corresponde.</p>
+        </div>
     </article>
-
+    
     <article class="workflow-card">
-    <img class="workflow-card__bg" src="assets/img/revestimiento-boton.jpeg" alt="">
-    <div class="workflow-card__content">
-        <span class="workflow-card__number">06</span>
-        <h3 class="workflow-card__title">Etiquetado y Certificación</h3>
-        <p class="workflow-card__desc">Incorporación de etiquetas personalizadas y emisión del certificado ambiental asociado a esa producción.</p>
-    </div>
+        <img class="workflow-card__bg" src="<?php echo get_template_directory_uri(); ?>/assets/img/06_conf.jpg" alt="Proceso 06">
+        <div class="workflow-card__content">
+            <span class="workflow-card__number">06</span>
+            <h3 class="workflow-card__title">Etiquetado y Certificación</h3>
+            <p class="workflow-card__desc">Incorporación de etiquetas personalizadas y emisión del certificado ambiental asociado a esa producción.</p>
+        </div>
     </article>
-
     </div>
   </div>
-
   <div class="workflow-dots" id="workflow-dots"></div>
 </section>
 <section class="container">
