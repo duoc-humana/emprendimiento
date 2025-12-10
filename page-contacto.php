@@ -10,7 +10,7 @@ get_header();
 
 <div class="container">
     <div class="row">
-        <a href="<?php echo home_url(); ?>">Ir al home</a>
+        <a class="links-sy" href="<?php echo home_url(); ?>">Ir al home</a>
     </div>
     <div class="row my-5">
         <div class="col-6">
@@ -40,7 +40,7 @@ get_header();
                 </div>
                 <div class="row my-2">
                     <div class="col-12 d-flex justify-content-center">
-                        <a href="mailto:consuelo.miranda@gmail.com">consuelo.miranda@gmail.com</a>
+                        <a class="links-sy" href="mailto:consuelo.miranda@gmail.com">consuelo.miranda@gmail.com</a>
                     </div>  
                 </div>
             </div>
