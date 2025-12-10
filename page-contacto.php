@@ -15,11 +15,13 @@ get_header();
     <div class="row">
         <div class="col-6">
             <div class="row caja-iconos-sy d-flex justify-content-center">
-                <div class="col-3 d-flex">
+                <div class="col-2">
                 <img class="img-iconos-sy" src="<?php echo get_template_directory_uri(); ?>/assets/img/icono-ubicacion.png" alt="">
                 </div>
-                <div class="col-3 d-flex">
-                    <p class="text-center">Dirección</p>
+                <div class="row">
+                    <div class="col-12">
+                        <p class="text-center">Dirección</p>
+                    </div>  
                 </div>
             </div>
         </div>
