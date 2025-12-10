@@ -61,29 +61,29 @@ get_header();
                     <form action="post">
                     <div class="row my-3">
                     <div class="col">
-                        <label for="nombre" class="fw-light">Nombre y Apellido</label>
+                        <label for="nombre">Nombre y Apellido</label>
                         <input id="nombre" class="form-control" type="text">  
                     </div>
                     <div class="col">
-                        <label for="telefono" class="fw-light">Teléfono</label>
+                        <label for="telefono">Teléfono</label>
                         <input type="tel" class="form-control" name="telefono" id="telefono">
                     </div>
                     </div>
                     <div class="row my-3">
                         <div class="col">
-                            <label for="mail" class="fw-light">Correo electrónico</label>
+                            <label for="mail">Correo electrónico</label>
                             <input type="email" class="form-control" name="email" id="mail">
                         </div>
                     </div>
                     <div class="row my-3">
                         <div class="col">
-                            <label for="asunto" class="fw-light">Asunto</label>
+                            <label for="asunto">Asunto</label>
                             <input id="asunto" class="form-control" type="text">
                         </div>
                     </div>
                     <div class="row my-3">
                         <div class="col">
-                            <label for="mensaje" class="fw-light">Escribe tu mensaje</label>
+                            <label for="mensaje">Escribe tu mensaje</label>
                             <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
                         </div>
                     </div>
