@@ -58,7 +58,9 @@ get_header();
             </div>
             <div class="row mt-3">
                 <div class="col-12">
-                    <form action="post">
+                    <form action="<?php echo admin_url('admin-post.php'); ?>">
+                    <input type="hidden" name="action" value="enviar_contacto">
+                    
                     <div class="row my-3">
                     <div class="col">
                         <label for="nombre">Nombre y Apellido</label>
@@ -87,6 +89,7 @@ get_header();
                             <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
                         </div>
                     </div>
+                    <?php wp_nonce_field('form_contacto', 'nonce_contacto'); ?>
                     <button type="submit" class="boton-enviar-sy">Enviar</button>
                 </form>
                 </div>
