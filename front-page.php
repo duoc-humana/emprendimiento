@@ -286,7 +286,7 @@ get_header();
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/maceta-2.png" alt="" class="h-100">
                 </div>
             </div>
-             <div class="carrusel-marcas mySwiper">
+             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
 
                     <?php
@@ -301,7 +301,7 @@ get_header();
                         $img_url = wp_get_attachment_url($fields);
                     ?>
                     
-                    <div class="slide-marcas">
+                    <div class="swiper-slide">
                         <img class="ajuste" src="<?php echo esc_url($img_url); ?>">
                     </div>
 
