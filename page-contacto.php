@@ -38,8 +38,8 @@ get_header();
                 <div class="col-2">
                 <img class="img-iconos-sy" src="<?php echo get_template_directory_uri(); ?>/assets/img/icono-mail.png" alt="">
                 </div>
-                <div class="row my-2 d-flex justify-content-center">
-                    <div class="col-12">
+                <div class="row my-2">
+                    <div class="col-12 d-flex justify-content-center">
                         <a href="mailto:consuelo.miranda@gmail.com">consuelo.miranda@gmail.com</a>
                     </div>  
                 </div>
