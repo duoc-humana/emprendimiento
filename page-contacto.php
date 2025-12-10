@@ -45,7 +45,42 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="col-6"></div>
+        <div class="col-6">
+            <div class="row">
+                <h1>Formulario de contacto</h1>
+            </div>
+            <div class="row">
+                <p class="py-3">No dudes en comunicarte con el equipo Recicla2, estaremos felices de resolver cualquier duda que tengas sobre nuestros productos, procesos y proyectos especiales</p>
+                <ul>
+                    <li>Diferentes medios de pago</li>
+                    <li>Plazo de respuesta de 1 a 3 días hábiles.</li>
+                </ul>
+            </div>
+            <div class="row">
+                <form action="post">
+                    <div class="col-6">
+                        <label for="nombre">Nombre y Apellido</label>
+                        <input id="nombre" type="text">  
+                    </div>
+                    <div class="col-6">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono">
+                    </div>
+                    <div class="col-12">
+                        <label for="mail">Correo electrónico</label>
+                        <input type="email" name="email" id="mail">
+                    </div>
+                    <div class="col-12">
+                        <label for="asunto">Asunto</label>
+                        <input id="asunto" type="text">
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje">Escribe tu mensaje</label>
+                        <textarea name="mensaje" id="mensaje"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>
 
