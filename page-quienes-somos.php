@@ -163,6 +163,66 @@ get_header();
     </div>
 </section>
 
+<section class="container">
+    <h2>Premios y Reconocimientos</h2>
+    <div class="swiper slider-premios">
+        <div class="swiper-wrapper">
+            <?php
+            $filtro = array(
+                'post_type'      => 'Premios', // tu CPT
+                'orderby'        => 'date',
+                'order'          => 'ASC',
+                'post_status'    => 'publish'
+            );
+
+            $consulta = new WP_Query($filtro);
+
+            if ($consulta->have_posts()) :
+                $i = 0; // contador para alternar
+                while ($consulta->have_posts()) :
+                    $consulta->the_post();
+
+                    // Campos personalizados
+                    $year      = get_field('ano-del-premio');
+                    $categoria = get_field('galardon');
+                    $title     = get_field('nombre_del_premio');
+
+                    // intercalar featured: pares o impares
+                    $featured_class = ($i % 2 == 0) ? 'featured' : '';
+                    ?>
+                    
+                    <div class="swiper-slide">
+                        <div class="award-card <?php echo $featured_class; ?>">
+                            <div class="award-header-row">
+                                <div class="award-date">
+                                    <div class="award-year"><?php echo esc_html($year); ?></div>
+                                    <div class="award-categoria"><?php echo esc_html($categoria); ?></div>
+                                </div>
+                                <div class="award-icon">
+                                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 
+                                                 1.18 6.88L12 17.77l-6.18 3.25L7 
+                                                 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="award-title"><?php echo esc_html($title); ?></div>
+                        </div>
+                    </div>
+
+                    <?php
+                    $i++; // aumentar contador
+                endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
 
 </main>
 <?php

@@ -165,6 +165,7 @@ var swiper = new Swiper(".certificados-quienesSomos", {
   slidesPerView: 1,
   spaceBetween: 0, 
   centeredSlides: false, 
+  loop:true, 
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -181,4 +182,30 @@ var swiper = new Swiper(".certificados-quienesSomos", {
     1024: { slidesPerView: 1, spaceBetween: 40 },
     1280: { slidesPerView: 1, spaceBetween: 50 }
   }
+});
+
+//swiper premios
+var premios = new Swiper('.slider-premios', {
+    loop: true,
+    spaceBetween: 50,
+    slidesPerView: 4,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+         slidesPerView: 2,
+         spaceBetween: 20,
+      },
+      768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+      },
+      1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+      },
+    },
+           
 });
