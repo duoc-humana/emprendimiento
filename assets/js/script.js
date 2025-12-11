@@ -18,7 +18,6 @@ searchContainers.forEach((searchContainer) => {
  var swiper = new Swiper(".mySwiper", {
     loop: true,
       spaceBetween: 20,
-       slidesPerView: 4,
       autoplay: {
         delay: 2500,
         disableOnInteraction: false,
