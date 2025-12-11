@@ -5,38 +5,33 @@ get_header();
 <main>
 <section class="fundadora py-5">
     <div class="container">
-        <h1 class="titulo-quienes-somos">Quienes somos</h1>
+    <h1 class="titulo-quienes-somos">Quienes somos</h1>
         <div class="row align-items-center">
-            <!-- Imagen de la fundadora -->
-            <div class="col-md-4 text-center mb-4 mb-md-0">
-                 <?php echo get_the_post_thumbnail( get_the_ID(), 'medium', array( 'class' => 'img-fluid' ) ); ?> 
-            </div>
-
-            <!-- Texto de presentación -->
-            <div class="col-md-6">
-                <?php 
-              $filtro = array(
-                'post_type' => 'post',  
-                'post__in'=>[264]   
-              );
-              $consulta = new WP_Query ($filtro);
-              if($consulta->have_posts()){
-                  foreach($consulta -> posts as $post){
-                  ?>
-                <h2 class="mb-3"><?php the_title(); ?></h2>
-                <p class="mb-3">
-                   <?php the_content();?>
-                </p>
-                  <?php
-                  }
-              }
-              ?> 
-                
-            </div>
-            <div class="col-md-2">
-            </div>
+            <?php 
+            $filtro = array(
+            'post_type' => 'post',  
+            'post__in' => [264]   
+            );
+            $consulta = new WP_Query($filtro);
+            if($consulta->have_posts()){
+                foreach($consulta->posts as $post){
+                    setup_postdata($post); // necesario para usar funciones de template
+                    ?>
+                    <div class="col-md-4 text-center mb-4 mb-md-0">
+                        <?php echo get_the_post_thumbnail($post->ID, 'medium', array('class' => 'img-fluid')); ?> 
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="mb-3"><?php the_title(); ?></h2>
+                        <p class="mb-3"><?php the_content(); ?></p>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <?php
+                }
+                wp_reset_postdata();
+            }
+            ?>
         </div>
-    </div>
+
 
     <div class="tabs-box">
 
