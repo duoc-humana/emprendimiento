@@ -169,7 +169,7 @@ get_header();
         <div class="swiper-wrapper">
             <?php
             $filtro = array(
-                'post_type'      => 'Premios', // tu CPT
+                'post_type'      => 'Premios', 
                 'orderby'        => 'date',
                 'order'          => 'ASC',
                 'post_status'    => 'publish'
@@ -217,9 +217,6 @@ get_header();
             endif;
             ?>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
     </div>
 </section>
 
