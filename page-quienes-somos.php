@@ -142,12 +142,14 @@ get_header();
                         <div class="texto-certificados">
                             <p class="order-md-2 order-1"><?php the_field('descripcion_de_certificado'); ?></p>
                         </div>
-                         <?php 
-                            $imagen = get_field('imagen_de_certificado');
-                            if ($imagen) {
-                                echo wp_get_attachment_image( $imagen['ID'], 'medium', false, array('class' => 'img-logo-certificado order-md-1 order-1') );
+                        <?php 
+                            $imagen_id = get_field('imagen_de_certificado');
+                            if ($imagen_id) {
+                                echo wp_get_attachment_image($imagen_id,'medium',false,array('class' => 'img-logo-certificado order-md-1 order-1')
+                                );
                             }
                             ?>
+
                     </div>
                     <?php
                 endwhile;
