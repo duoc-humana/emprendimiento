@@ -140,9 +140,14 @@ get_header();
                     ?>
                     <div class="swiper-slide">
                         <div class="texto-certificados">
-                            <p class="order-md-2 order-1"><?php the_content(); ?></p>
+                            <p class="order-md-2 order-1"><?php the_field('descripcion_de_certificado'); ?></p>
                         </div>
-                        <?php echo get_the_post_thumbnail(get_the_ID(), 'medium', array('class' => 'img-logo-certificado order-md-1 order-1')); ?>
+                         <?php 
+                            $imagen = get_field('imagen_de_certificado');
+                            if ($imagen) {
+                                echo wp_get_attachment_image( $imagen['ID'], 'medium', false, array('class' => 'img-logo-certificado order-md-1 order-1') );
+                            }
+                            ?>
                     </div>
                     <?php
                 endwhile;
