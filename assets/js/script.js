@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleUI(i) {
   cards.forEach((c, k) => c.toggleAttribute("active", k === i));
-  dots.forEach((d, k) => d.classList.toggle("active", k === i));
 
   if (prev) prev.disabled = i === 0;
   if (next) next.disabled = i === cards.length - 1;

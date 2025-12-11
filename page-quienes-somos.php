@@ -9,7 +9,7 @@ get_header();
         <div class="row align-items-center">
             <!-- Imagen de la fundadora -->
             <div class="col-md-4 text-center mb-4 mb-md-0">
-                <img src="assets/img/consuelo.png" alt="Fundadora" class="img-fluid">
+                 <?php echo get_the_post_thumbnail( get_the_ID(), 'medium', array( 'class' => 'img-fluid' ) ); ?> 
             </div>
 
             <!-- Texto de presentación -->
