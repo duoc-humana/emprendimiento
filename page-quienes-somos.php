@@ -124,25 +124,39 @@ get_header();
     <h2>Certificados de Recicla2</h2>
     <div class="swiper certificados-quienesSomos">
         <div class="swiper-wrapper">
-            <div class="swiper-slide" >
-                <div class="texto-certificados">
-                    <p class="order-md-2 order-1">Nuestra operación cuenta con la Certificación como Recicladora Base, otorgada por el Estado. Esto garantiza que tu empresa cumple con la normativa ambiental de manera confiable. Tu certificado de reciclaje es un documento oficial, asegurando trazabilidad total y generando confianza en tus reportes de sostenibilidad.</p>
-                </div>
-                <img  class="img-logo-certificado order-md-1 order-1" src="assets/img/ley-rep.png">
-            </div>
-            <div class="swiper-slide" >
-                 <div class="texto-certificados">
-                    <p>Nuestra operación cuenta con la Certificación como Recicladora Base, otorgada por el Estado. Esto garantiza que tu empresa cumple con la normativa ambiental de manera confiable. Tu certificado de reciclaje es un documento oficial, asegurando trazabilidad total y generando confianza en tus reportes de sostenibilidad.</p>
-                </div>
-                <img  class="img-logo-certificado" src="assets/img/ley-rep.png">
-            </div>
+            <?php
+            $filtro = array(
+                'post_type'      => 'certificados',
+                'posts_per_page' => -1, // todos los certificados
+                'orderby'        => 'date',
+                'order'          => 'ASC',
+                'post_status'    => 'publish'
+            );
+
+            $consulta = new WP_Query($filtro);
+
+            if ($consulta->have_posts()) :
+                while ($consulta->have_posts()) :
+                    $consulta->the_post();
+                    ?>
+                    <div class="swiper-slide">
+                        <div class="texto-certificados">
+                            <p class="order-md-2 order-1"><?php the_content(); ?></p>
+                        </div>
+                        <?php echo get_the_post_thumbnail(get_the_ID(), 'medium', array('class' => 'img-logo-certificado order-md-1 order-1')); ?>
+                    </div>
+                    <?php
+                endwhile;
+                wp_reset_postdata();
+            endif;
+            ?>
         </div>
-         <div class="swiper-button-next"></div>
+        <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
     </div>
-
 </section>
+
 
 </main>
 <?php
