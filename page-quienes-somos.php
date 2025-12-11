@@ -14,10 +14,24 @@ get_header();
 
             <!-- Texto de presentación -->
             <div class="col-md-6">
-                <h2 class="mb-3">Nuestra Fundadora</h2>
+                <?php 
+              $filtro = array(
+                'post_type' => 'post',  
+                'post__in'=>[264]   
+              );
+              $consulta = new WP_Query ($filtro);
+              if($consulta->have_posts()){
+                  foreach($consulta -> posts as $post){
+                  ?>
+                <h2 class="mb-3"><?php the_title(); ?></h2>
                 <p class="mb-3">
-                    RECICLA2, fundada por Consuelo Miranda, combate la contaminación textil en Chile. Transformamos desechos textiles en bloques ecológicos, reduciendo CO2 y residuos en vertederos. Usamos un aglomerante ecológico, creamos oportunidades económicas y promovemos educación ambiental. Nuestro compromiso es un impacto positivo en la comunidad y el planeta. ¡Juntos hacemos la diferencia!
+                   <?php the_content();?>
                 </p>
+                  <?php
+                  }
+              }
+              ?> 
+                
             </div>
             <div class="col-md-2">
             </div>
