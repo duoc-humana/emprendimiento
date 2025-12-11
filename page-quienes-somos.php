@@ -127,7 +127,6 @@ get_header();
             <?php
             $filtro = array(
                 'post_type'      => 'certificados',
-                'posts_per_page' => -1, // todos los certificados
                 'orderby'        => 'date',
                 'order'          => 'ASC',
                 'post_status'    => 'publish'
