@@ -188,7 +188,6 @@ var swiper = new Swiper(".certificados-quienesSomos", {
 var premios = new Swiper('.slider-premios', {
     loop: true,
     spaceBetween: 50,
-    slidesPerView: 4,
     autoplay: {
       delay: 2500,
       disableOnInteraction: false,
