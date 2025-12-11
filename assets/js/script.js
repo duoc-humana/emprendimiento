@@ -73,16 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const isMobile = () => matchMedia("(max-width:767px)").matches;
 
-  // Crear dots dinámicamente (solo escritorio)
-  if (!isMobile()) {
-    cards.forEach((_, i) => {
-      const dot = document.createElement("span");
-      dot.className = "dot";
-      dot.onclick = () => activate(i, true);
-      dotsBox.appendChild(dot);
-    });
-  }
-  const dots = Array.from(dotsBox.children);
+ 
 
   let current = 0;
 
@@ -144,13 +135,6 @@ document.addEventListener("DOMContentLoaded", () => {
         go(dx > 0 ? -1 : 1);
       }
     }, { passive: true });
-  }
-
-  // Ocultar controles en móvil
-  if (isMobile()) {
-    dotsBox.hidden = true;
-    if (prev) prev.hidden = true;
-    if (next) next.hidden = true;
   }
 
   addEventListener("resize", () => center(current), { passive: true });
