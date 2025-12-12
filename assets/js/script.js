@@ -162,7 +162,7 @@ selectors.forEach(selector => {
     });
 });
 
-var swiper = new Swiper(".certificados-quienesSomos", {
+var certificados= new Swiper(".certificados-quienesSomos", {
   slidesPerView: 1,
   spaceBetween: 0, 
   centeredSlides: false, 
