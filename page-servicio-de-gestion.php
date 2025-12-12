@@ -1,5 +1,8 @@
 <?php
 // Archivo base para cargar el tema.
+/*
+Template Name: Página de servicios de gestion
+*/
 get_header();
 ?>
 
