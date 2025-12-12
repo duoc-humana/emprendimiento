@@ -68,9 +68,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const cards = Array.from(track.children);
   const prev = document.getElementById("workflow-prev");
   const next = document.getElementById("workflow-next");
+
+
   const isMobile = () => matchMedia("(max-width:767px)").matches;
 
- 
+
 
   let current = 0;
 
@@ -86,6 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleUI(i) {
   cards.forEach((c, k) => c.toggleAttribute("active", k === i));
+  dots.forEach((d, k) => d.classList.toggle("active", k === i));
 
   if (prev) prev.disabled = i === 0;
   if (next) next.disabled = i === cards.length - 1;
@@ -133,12 +136,14 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { passive: true });
   }
 
+
   addEventListener("resize", () => center(current), { passive: true });
 
   // Inicializar
   toggleUI(0);
   center(0);
 });
+
 
 
 // Funcionalidad de los tabs
