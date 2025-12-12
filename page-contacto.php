@@ -66,7 +66,7 @@ get_header();
                     <div class="row my-3">
                     <div class="col">
                         <label for="nombre">Nombre y Apellido</label>
-                        <input id="nombre" class="form-control" type="text">  
+                        <input id="nombre" name="nombre" class="form-control" type="text">  
                     </div>
                     <div class="col">
                         <label for="telefono">Teléfono</label>
@@ -82,7 +82,7 @@ get_header();
                     <div class="row my-3">
                         <div class="col">
                             <label for="asunto">Asunto</label>
-                            <input id="asunto" class="form-control" type="text">
+                            <input name="asunto" id="asunto" class="form-control" type="text">
                         </div>
                     </div>
                     <div class="row my-3">
