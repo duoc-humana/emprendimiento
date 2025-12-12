@@ -68,8 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const cards = Array.from(track.children);
   const prev = document.getElementById("workflow-prev");
   const next = document.getElementById("workflow-next");
-  const dotsBox = document.getElementById("workflow-dots");
-
   const isMobile = () => matchMedia("(max-width:767px)").matches;
 
  
