@@ -33,7 +33,7 @@ get_header();
             </div>
     </div>
 
-    <div class="tabs-box">
+    <div class="tabs-box esp3">
 
         <!-- CONTENIDO DEL TAB -->
         <div class="tab-content-box">
@@ -60,7 +60,7 @@ get_header();
         </div>
     </div>
     
-<section class="workflow-section container mt-5">
+<section class="workflow-section container esp3">
     <h2>Proceso de confección</h2>
     <div class="workflow-slider">
         <div class="workflow-track" id="workflow-track">
@@ -120,7 +120,7 @@ get_header();
         </div>
     </div>
 </section>
-<section class="container mt-5">
+<section class="container esp3">
     <h2>Certificados de Recicla2</h2>
     <div class="swiper certificados-quienesSomos">
         <div class="swiper-wrapper">
@@ -163,7 +163,7 @@ get_header();
     </div>
 </section>
 
-<section class="container mt-5">
+<section class="container esp3">
     <h2>Premios y Reconocimientos</h2>
     <div class="swiper slider-premios">
         <div class="swiper-wrapper">
