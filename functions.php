@@ -113,55 +113,68 @@ add_action('admin_menu', function() {
 
 //Funcion para emails
 
+// Procesar formulario de contacto
 add_action('admin_post_nopriv_enviar_contacto', 'procesar_form_contacto');
 add_action('admin_post_enviar_contacto', 'procesar_form_contacto');
 
 function procesar_form_contacto() {
 
     // 1. Validar nonce
-    if (!isset($_POST['nonce_contacto']) || 
-        !wp_verify_nonce($_POST['nonce_contacto'], 'form_contacto')) {
+    if (
+        !isset($_POST['nonce_contacto']) ||
+        !wp_verify_nonce($_POST['nonce_contacto'], 'form_contacto')
+    ) {
         wp_die('Error de seguridad');
     }
 
     // 2. Sanitizar datos
-    $nombre  = sanitize_text_field($_POST['nombre']);
-    $email   = sanitize_email($_POST['email']);
-    $mensaje = sanitize_textarea_field($_POST['mensaje']);
+    $nombre   = sanitize_text_field($_POST['nombre']);
+    $email    = sanitize_email($_POST['email']);
+    $mensaje  = sanitize_textarea_field($_POST['mensaje']);
     $telefono = preg_replace('/[^0-9+\s()-]/', '', $_POST['telefono']);
-    $asunto = sanitize_text_field($_POST['asunto']);
+    $asunto   = sanitize_text_field($_POST['asunto']);
 
-    // 3. Email para tu clienta
-    $admin_email = 'haglla8@gmail.com';  // <-- reemplaza
+    // 3. Configurar headers
+    $headers = array(
+        'Content-Type: text/plain; charset=UTF-8',
+        "Reply-To: $nombre <$email>"
+    );
+
+    // 4. Email para tu clienta
+    $admin_email = 'haglla8@gmail.com';
 
     $subject_admin = "📩 Nuevo mensaje de cliente";
-    $body_admin = "
-        Nombre: $nombre\n
-        Email: $email\n
-        Teléfono: $telefono\n
-        Asunto: $asunto\n
-        Mensaje:\n$mensaje
-    ";
+    $body_admin = <<<EOD
+Nuevo mensaje recibido desde el formulario:
 
-    wp_mail($admin_email, $subject_admin, $body_admin);
+Nombre: $nombre
+Email: $email
+Teléfono: $telefono
+Asunto: $asunto
 
-    // 4. Email de confirmación para el usuario
+Mensaje:
+$mensaje
+EOD;
+
+    wp_mail($admin_email, $subject_admin, $body_admin, $headers);
+
+    // 5. Email de confirmación para el usuario
     $subject_user = "Hemos recibido tu mensaje ✔️";
-    $body_user = "
-        Hola $nombre,
+    $body_user = <<<EOD
+Hola $nombre,
 
-        Gracias por contactarnos. Pronto te responderemos.
-        
-        Copia de tu mensaje:
-        $mensaje
+Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos pronto.
 
-        Saludos,
-        Recicla2.
-    ";
+Copia de tu mensaje:
+$mensaje
 
-    wp_mail($email, $subject_user, $body_user);
+Saludos,
+Recicla2.
+EOD;
 
-    // 5. Redirección final
-    wp_redirect(home_url('/gracias/')); 
+    wp_mail($email, $subject_user, $body_user, $headers);
+
+    // 6. Redirección final
+    wp_redirect(home_url('/gracias/'));
     exit;
 }
