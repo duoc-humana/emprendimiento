@@ -141,7 +141,7 @@ function procesar_form_contacto() {
     );
 
     // 4. Email para tu clienta
-    $admin_email = 'haglla8@gmail.com';
+    $admin_email = 'agencia.humana25@gmail.com';
 
     $subject_admin = "📩 Nuevo mensaje de cliente";
     $body_admin = <<<EOD
@@ -151,7 +151,6 @@ Nombre: $nombre
 Email: $email
 Teléfono: $telefono
 Asunto: $asunto
-
 Mensaje:
 $mensaje
 EOD;
