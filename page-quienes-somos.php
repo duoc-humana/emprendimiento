@@ -120,7 +120,7 @@ get_header();
         </div>
     </div>
 </section>
-<section class="container">
+<section class="container mt-5">
     <h2>Certificados de Recicla2</h2>
     <div class="swiper certificados-quienesSomos">
         <div class="swiper-wrapper">
@@ -163,7 +163,7 @@ get_header();
     </div>
 </section>
 
-<section class="container">
+<section class="container mt-5">
     <h2>Premios y Reconocimientos</h2>
     <div class="swiper slider-premios">
         <div class="swiper-wrapper">
