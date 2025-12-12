@@ -134,7 +134,7 @@ function procesar_form_contacto() {
     // 3. Email para tu clienta
     $admin_email = 'haglla8@gmail.com';  // <-- reemplaza
 
-    $subject_admin = "📩 Nuevo mensaje desde la web";
+    $subject_admin = "📩 Nuevo mensaje de cliente";
     $body_admin = "
         Nombre: $nombre\n
         Email: $email\n
