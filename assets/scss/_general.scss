@@ -561,16 +561,15 @@ img {
 
     .swiper-slide {
       text-align: center;
-      font-size: 18px;
       display: flex;
       justify-content: center;
       align-items: center;
-      img {
-      display: block;
-      width: 250px;
-      height: 200px;
-      object-fit: cover;
-    }
+        img {
+        display: block;
+        width: 250px;
+        height: 200px;
+        object-fit: cover;
+        }
       
    }
 
