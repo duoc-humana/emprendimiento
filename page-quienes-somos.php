@@ -138,7 +138,7 @@ get_header();
                 while ($consulta->have_posts()) :
                     $consulta->the_post();
                     ?>
-                    <div class="swiper-slide">
+                    <div class="swiper-slide contenedor-certificados">
                         <div class="texto-certificados">
                             <p class="order-md-2 order-1"><?php the_field('descripcion_de_certificado'); ?></p>
                         </div>
