@@ -77,7 +77,7 @@ get_header();
                             <ul>
                             <li>Vest deportivo</li>
                             <li>Cortavientos</li>
-                            <li>Chaqueta de mezclilla</li>
+                            <li>Chaqueta de jeans</li>
                             <li>Chaqueta de tela</li>
                             </ul>
                         </div>
