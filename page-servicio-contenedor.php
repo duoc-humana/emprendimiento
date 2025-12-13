@@ -25,36 +25,67 @@ get_header();
                 </div>
             </div>
 
-            <!-- Iconos -->
-            <div class="row text-center mt-5 iconos-tipo">
+           <div class="row text-center mt-5 iconos-tipo">
 
                 <div class="col-6 col-md-3 mb-4">
                     <div class="icono-circulo">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pantalonesicono.svg" class="icono-tipo" alt="">
+                        <div class="texto-inline">
+                            <ul>
+                            <li>Jeans</li>
+                            <li>Pantalones de tela</li>
+                            <li>Shorts</li>
+                            <li>Buzos</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
 
                 <div class="col-6 col-md-3 mb-4">
                     <div class="icono-circulo">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/t-shirt_5693.png" class="icono-tipo" alt="">
+                        <div class="texto-inline">
+                            <ul>
+                            <li>Deportivas</li>
+                            <li>Blusas y camisas</li>
+                            <li>Algodón</li>
+                            <li>Estampadas</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3 mb-4">
                     <div class="icono-circulo">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sweater_78200.svg" class="icono-tipo" alt="">
+                        <div class="texto-inline">
+                            <ul>
+                            <li>Canguros</li>
+                            <li>Polerón con cierre</li>
+                            <li>Polerón clásico</li>
+                            <li>Crewneck</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3 mb-4">
                     <div class="icono-circulo">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mens-sleeveless-jacket_78087.svg" class="icono-tipo" alt="">
+                        <div class="texto-inline">
+                            <ul>
+                            <li>Vest deportivo</li>
+                            <li>Cortavientos</li>
+                            <li>Chaqueta de mezclilla</li>
+                            <li>Chaqueta de tela</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
             </div>
-
-
+            <div id="texto-icono" class="texto-lateral"></div>
         </section>
 
         <!-- ===========================

@@ -277,3 +277,11 @@ var swiperEmpresas = new Swiper(".swiper-empresas", {
                 },
             },
             });
+ 
+
+//circulos contenedor 
+document.querySelectorAll('.icono-circulo').forEach(icono => {
+  icono.addEventListener('click', () => {
+    icono.classList.toggle('activo');
+  });
+});
