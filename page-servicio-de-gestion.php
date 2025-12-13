@@ -28,7 +28,7 @@ get_header();
                     <!-- Imagen -->
                     <div class="col-lg-5 col-md-6 mt-4 mt-md-0">
                         <div class="contenedor-img imgprimergest">
-                            <img src="assets/img/img-home1.png" alt="Gestión de residuos"
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home1.png" alt="Gestión de residuos"
                                 class="img-fluid imagen-residuos">
                         </div>
                     </div>
@@ -60,7 +60,7 @@ get_header();
                 </div>
 
                 <div class="col-lg-6 text-center mt-4 mt-lg-0">
-                    <img src="assets/img/economia-circular-768x478.png" alt="Economía circular" class="imgeconomia">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/economia-circular-768x478.png" alt="Economía circular" class="imgeconomia">
                 </div>
             </div>
         </section>

@@ -21,7 +21,7 @@ get_header();
                     </p>
                 </div>
                 <div class="col-lg-5 text-center imgcontebasu">
-                    <img src="assets/img/contenedor.webp" alt="Contenedor" class="img-fluid contenedor-img">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contenedor.webp" alt="Contenedor" class="img-fluid contenedor-img">
                 </div>
             </div>
 
@@ -30,25 +30,25 @@ get_header();
 
                 <div class="col-6 col-md-3 mb-4">
                     <div class="icono-circulo">
-                        <img src="assets/img/pantalonesicono.svg" class="icono-tipo" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pantalonesicono.svg" class="icono-tipo" alt="">
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3 mb-4">
                     <div class="icono-circulo">
-                        <img src="assets/img/t-shirt_5693.png" class="icono-tipo" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/t-shirt_5693.png" class="icono-tipo" alt="">
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3 mb-4">
                     <div class="icono-circulo">
-                        <img src="assets/img/sweater_78200.svg" class="icono-tipo" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sweater_78200.svg" class="icono-tipo" alt="">
                     </div>
                 </div>
 
                 <div class="col-6 col-md-3 mb-4">
                     <div class="icono-circulo">
-                        <img src="assets/img/mens-sleeveless-jacket_78087.svg" class="icono-tipo" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mens-sleeveless-jacket_78087.svg" class="icono-tipo" alt="">
                     </div>
                 </div>
 
@@ -64,7 +64,7 @@ get_header();
             <div class="container">
                 <div class="row align-items-center fondo-azul p-4 rounded-4">
                     <div class="col-lg-4 text-center">
-                        <img src="assets/img/contenedores.png" alt="" class="img-fluid">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/contenedores.png" alt="" class="img-fluid">
                     </div>
 
                     <div class="col-lg-8">
