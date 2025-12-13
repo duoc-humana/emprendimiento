@@ -72,7 +72,7 @@ get_header();
 
                 <div class="col-6 col-md-3 mb-4">
                     <div class="icono-circulo">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mens-sleeveless-jacket_78087.svg" class="icono-tipo" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mens-sleeveless-jacket_78087.svg" class="icono-tipo chaleco" alt="">
                         <div class="texto-inline">
                             <ul>
                             <li>Vest deportivo</li>
