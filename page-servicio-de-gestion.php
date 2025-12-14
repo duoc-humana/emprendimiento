@@ -117,7 +117,7 @@ get_header();
                     <p class="text-start">La gestión del material textil puede realizarse tanto mediante retiro coordinado por nuestro equipo como por entrega directa por parte de la empresa. Una vez recibida esta solicitud, nos pondremos en contacto para definir la modalidad más adecuada, junto con los detalles de fecha, lugar y logística según el tipo y volumen de material.</p>  
                 </div> 
             </div>
-            <div class="col-6">
+            <div class="col-6 px-4">
                 <form action="POST">
                 <div class="row">
                     <div class="col">
@@ -135,16 +135,21 @@ get_header();
                 </div>
                 <div class="row">
                     <label for="direccion">Dirección de retiro:</label>
-                    <input type="text" name="direccion" id="direccion">
+                    <input type="text" name="direccion" id="direccion" class="form-control">
                 </div>
                 <div class="row">
-                    <fieldset class="form-check">
+                    <fieldset>
                         <legend>¿Requiere destrucción de identidad corporativa?</legend>
+                        <div class="form-check">
                             <input class="form-check-input" type="radio" name="si" value="si" id="si">
                             <label for="si" class="form-check-label">Sí</label>
-
+                        </div>
+                        <div class="form-check">
                             <input class="form-check-input" type="radio" name="no" value="no" id="no">
                             <label for="no" class="form-check-label">No</label>
+                        </div>   
+
+                            
                     </fieldset>
                 </div>
                 <div class="row">
