@@ -121,20 +121,31 @@ get_header();
                 <form action="POST">
                 <div class="row">
                     <div class="col">
-
+                        <label for="empresa">Empresa:</label>
+                        <input id="empresa" name="empresa" class="form-control" type="text">
                     </div>
                     <div class="col">
-
+                        <label for="rut">Rut:</label>
+                        <input type="number" name="rut" id="rut" class="form-control">
                     </div>
                 </div>
                 <div class="row">
-
+                    <label for="email2">Email:</label>
+                    <input type="email" name="email2" id="email2" class="form-control">
                 </div>
                 <div class="row">
-
+                    <label for="direccion">Dirección de retiro:</label>
+                    <input type="text" name="direccion" id="direccion">
                 </div>
                 <div class="row">
+                    <fieldset class="form-check">
+                        <legend>¿Requiere destrucción de identidad corporativa?</legend>
+                            <input class="form-check-input" type="radio" name="si" value="si" id="si">
+                            <label for="si" class="form-check-label">Sí</label>
 
+                            <input class="form-check-input" type="radio" name="no" value="no" id="no">
+                            <label for="no" class="form-check-label">No</label>
+                    </fieldset>
                 </div>
                 <div class="row">
                     <div class="col">
