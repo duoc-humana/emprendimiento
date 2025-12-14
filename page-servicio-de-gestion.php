@@ -60,7 +60,7 @@ get_header();
                 </div>
 
                 <div class="col-lg-6 text-center mt-4 mt-lg-0">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/economia-circular.png" alt="Economía circular hola" class="imgeconomia">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/economia-circular.png" alt="Economía circular" class="imgeconomia">
                 </div>
             </div>
         </section>
@@ -80,7 +80,7 @@ get_header();
                 <p>Retiro de uniformes, transformación en productos corporativos y elaboración de certificado ambiental.</p>
                 </div>
             </div>
-            <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(gas-valpo.png);">
+            <div class="swiper-slide slider-trabajo-empresa" style="background-image: url('assets/img/gas-valpo.png');">>
                 <div class="item-desc">
                 <h3>Gasvalpo</h3>
                 <p>Revalorización de prendas institucionales con trazabilidad y reportes de impacto.</p>
