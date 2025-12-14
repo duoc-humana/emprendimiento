@@ -227,9 +227,9 @@ get_header();
                     </div>
                 </div>
                 <div class="row mb-2">
-                     <label for="mensaje2">Escribe tu mensaje</label>
-                        <textarea name="mensaje2" class="form-control" id="mensaje2">
-                        <textarea>
+                    <label for="mensaje2">Escribe tu mensaje</label>
+                    <textarea name="mensaje2" class="form-control" id="mensaje2">
+                    <textarea>
                 </div>
                 </form>
                 
