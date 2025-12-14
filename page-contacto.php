@@ -91,7 +91,9 @@ get_header();
                             <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="boton-enviar-sy">Enviar</button>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="boton-enviar-sy">Enviar</button>
+                    </div>     
                 </form>
                 </div>
                 
