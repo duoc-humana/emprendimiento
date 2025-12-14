@@ -118,7 +118,12 @@ get_header();
             </div> 
         </div>
         <div class="col-6">
-            <form action="" method="POST">
+            <div class="row">
+                <h2>Formulario</h2>
+            </div>
+            <div class="row">
+            <div class="col-12">
+                <form action="" method="POST">
                 <div class="row mb-4">
                     <div class="col">
                         <label for="empresa">Empresa:</label>
@@ -223,6 +228,9 @@ get_header();
                     <button type="submit" class="boton-enviar-sy">Enviar</button>
                 </div>
             </form>
+            </div>  
+            </div>
+            
         </div>
         <div class="col-1"></div>
     </div>
