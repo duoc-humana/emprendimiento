@@ -169,10 +169,10 @@ get_header();
                         <fieldset>
                             <legend>Volumen aprox</legend>
                             <select class="form-select" aria-label="Seleccionar volumen aproximado" name="volumen" id="volumen">
-                                <option selected>100 m3</option>
-                                <option value="1">200 m3</option>
-                                <option value="2">300 m3</option>
-                                <option value="3">400 m3 o más</option>
+                                <option selected value="100 m3">100 m3</option>
+                                <option value="200 m3">200 m3</option>
+                                <option value="300 m3">300 m3</option>
+                                <option value="400 m3 o más">400 m3 o más</option>
                             </select>
                         </fieldset>
                     </div>
@@ -180,10 +180,10 @@ get_header();
                         <fieldset>
                             <legend>Tipo de textil</legend>
                             <select class="form-select" aria-label="Seleccionar tipo de textil" name="tipo_textil" id="tipo_textil">
-                                <option selected>Jeans</option>
-                                <option value="1">Tela impermeable</option>
-                                <option value="2">Algodón</option>
-                                <option value="3">Poliéster</option>
+                                <option selected value="Jeans">Jeans</option>
+                                <option value="Tela impermeable">Tela impermeable</option>
+                                <option value="Algodón">Algodón</option>
+                                <option value="Poliéster">Poliéster</option>
                             </select>
                         </fieldset>
                     </div>

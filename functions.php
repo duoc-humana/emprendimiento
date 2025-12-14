@@ -214,8 +214,8 @@ $tipo_textil = isset($_POST['tipo_textil'])
 $productos = [];
 
 if (isset($_POST['maceta'])) $productos[] = 'Maceta';
-if (isset($_POST['bloque'])) $productos[] = 'Bloque';
-if (isset($_POST['merch']))  $productos[] = 'Merch';
+if (isset($_POST['bloque'])) $productos[] = 'Bloque de revestimiento';
+if (isset($_POST['merch']))  $productos[] = 'Merchandising';
 if (isset($_POST['otro']))   $productos[] = 'Otro';
 
 $productos_texto = implode(', ', $productos);
