@@ -166,9 +166,9 @@ get_header();
                 </div>
                 <div class="row mb-4">
                     <div class="col">
-                        <fieldset name="volumen" id="volumen">
+                        <fieldset>
                             <legend>Volumen aprox</legend>
-                            <select class="form-select" aria-label="Seleccionar volumen aproximado">
+                            <select class="form-select" aria-label="Seleccionar volumen aproximado" name="volumen" id="volumen">
                                 <option selected>100 m3</option>
                                 <option value="1">200 m3</option>
                                 <option value="2">300 m3</option>
@@ -177,9 +177,9 @@ get_header();
                         </fieldset>
                     </div>
                     <div class="col">
-                        <fieldset name="tipo_textil" id="tipo_textil">
+                        <fieldset>
                             <legend>Tipo de textil</legend>
-                            <select class="form-select" aria-label="Seleccionar tipo de textil">
+                            <select class="form-select" aria-label="Seleccionar tipo de textil" name="tipo_textil" id="tipo_textil">
                                 <option selected>Jeans</option>
                                 <option value="1">Tela impermeable</option>
                                 <option value="2">Algodón</option>
