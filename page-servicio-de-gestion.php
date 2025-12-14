@@ -111,9 +111,9 @@ get_header();
     <!-- Formulario ++++++ -->
      <div class="container">
         <div class="row">
-            <div class="col-6 img-fondo-tex-sy">
-                <h3></h3>
-                <p></p>
+            <div class="col-6 img-fondo-tex-sy text-center">
+                <h3>Recuerda que:</h3>
+                <p>La gestión del material textil puede realizarse tanto mediante retiro coordinado por nuestro equipo como por entrega directa por parte de la empresa. Una vez recibida esta solicitud, nos pondremos en contacto para definir la modalidad más adecuada, junto con los detalles de fecha, lugar y logística según el tipo y volumen de material.</p>
             </div>
             <div class="col-6">
                 <form action="POST">
@@ -146,7 +146,7 @@ get_header();
 
                 </div>
                 <div class="row">
-                    
+
                 </div>
                 </form>
                 
