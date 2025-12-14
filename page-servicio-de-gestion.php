@@ -110,7 +110,6 @@ get_header();
 
     <!-- Formulario ++++++ -->
 <div class="container-fluid esp3">
-    <div class="row">
         <div class="col-5 ms-0 me-5 px-0 img-fondo-tex-sy d-flex justify-content-center">
             <div class="color-fondo-sy">
                 <h3 class="pb-3">Recuerda que:</h3>
@@ -221,8 +220,11 @@ get_header();
                     </div>
                 </div>
                 <div class="row mb-4">
-                    <label for="mensaje2">Escribe tu mensaje</label>
+                    <div class="col">
+                        <label for="mensaje2">Escribe tu mensaje</label>
                     <textarea name="mensaje2" class="form-control" id="mensaje2"></textarea>
+                    </div>
+                    
                 </div>
                 <div class="d-flex justify-content-end">
                     <button type="submit" class="boton-enviar-sy">Enviar solicitud de retiro</button>
@@ -233,7 +235,6 @@ get_header();
             
         </div>
         <div class="col-1"></div>
-    </div>
 </div>
 
 
