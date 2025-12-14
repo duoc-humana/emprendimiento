@@ -119,7 +119,7 @@ get_header();
             </div>
             <div class="col-6">
                 <form action="POST">
-                <div class="row">
+                <div class="row mb-2">
                     <div class="col">
                         <label for="empresa">Empresa:</label>
                         <input id="empresa" name="empresa" class="form-control" type="text">
@@ -129,21 +129,21 @@ get_header();
                         <input type="number" name="rut" id="rut" class="form-control">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mb-2">
                     <div class="col">
                         <label for="email2">Email:</label>
                         <input type="email" name="email2" id="email2" class="form-control">
                     </div>
                     
                 </div>
-                <div class="row">
+                <div class="row mb-2">
                     <div class="col">
                        <label for="direccion">Dirección de retiro:</label>
                         <input type="text" name="direccion" id="direccion" class="form-control"> 
                     </div>
                     
                 </div>
-                <div class="row">
+                <div class="row mb-2">
                     <div class="col">
                         <fieldset>
                         <legend>¿Requiere destrucción de identidad corporativa?</legend>
@@ -154,26 +154,82 @@ get_header();
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="no" value="no" id="no">
                             <label for="no" class="form-check-label">No</label>
-                        </div>   
-
-                            
+                        </div>    
                         </fieldset>
                     </div>
                     
                 </div>
-                <div class="row">
+                <div class="row mb-2">
                     <div class="col">
-
+                        <fieldset>
+                            <legend>Volumen aprox</legend>
+                            <select class="form-select" aria-label="Seleccionar volumen aproximado">
+                                <option selected>100 m3</option>
+                                <option value="1">200 m3</option>
+                                <option value="2">300 m3</option>
+                                <option value="3">400 m3 o más</option>
+                            </select>
+                        </fieldset>
                     </div>
                     <div class="col">
-
+                        <fieldset>
+                            <legend>Tipo de textil</legend>
+                            <select class="form-select" aria-label="Seleccionar tipo de textil">
+                                <option selected>Jeans</option>
+                                <option value="1">Tela impermeable</option>
+                                <option value="2">Algodón</option>
+                                <option value="3">Poliéster</option>
+                            </select>
+                        </fieldset>
                     </div>
                 </div>
-                <div class="row">
-
+                <div class="row mb-2">
+                    <div class="col">
+                        <fieldset>
+                            <legend>Productos de interés</legend>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="maceta" id="maceta" name="maceta">
+                                    <label class="form-check-label" for="maceta">
+                                    Maceta
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="bloque" id="bloque" name="bloque">
+                                    <label class="form-check-label" for="bloque">
+                                    Bloque de revestimiento
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-1">
+                                <div class="col">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="merch" id="merch" name="merch">
+                                    <label class="form-check-label" for="merch">
+                                    Merchandising
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="otro" id="otro" name="otro">
+                                    <label class="form-check-label" for="otro">
+                                    Otro
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
                 </div>
-                <div class="row">
-
+                <div class="row mb-2">
+                     <label for="mensaje2">Escribe tu mensaje</label>
+                        <textarea name="mensaje2" class="form-control" id="mensaje2">
+                        <textarea>
                 </div>
                 </form>
                 
