@@ -177,3 +177,94 @@ EOD;
     wp_redirect(home_url('/gracias/'));
     exit;
 }
+
+// Procesar formulario de contacto
+add_action('admin_post_nopriv_enviar_servicio', 'procesar_form_servicio');
+add_action('admin_post_enviar_servicio', 'procesar_form_servicio');
+
+function procesar_form_servicio() {
+
+    // 1. Validar nonce
+    if (
+        !isset($_POST['nonce_servicio']) ||
+        !wp_verify_nonce($_POST['nonce_servicio'], 'form_servicio')
+    ) {
+        wp_die('Error de seguridad');
+    }
+
+    // 2. Sanitizar datos
+    $empresa  = sanitize_text_field($_POST['empresa']);
+    $rut      = sanitize_text_field($_POST['rut']); // Usar sanitize_text_field() si deseas un formato más seguro que sanitize_number_int()
+    $email   = sanitize_email($_POST['email_2']);
+    $direccion = sanitize_text_field($_POST['direccion']);
+    $mensaje  = sanitize_textarea_field($_POST['mensaje_2']);
+
+    $destruccion = isset($_POST['destruccion_identidad'])
+    ? sanitize_text_field($_POST['destruccion_identidad'])
+    : '';
+
+$volumen = isset($_POST['volumen'])
+    ? sanitize_text_field($_POST['volumen'])
+    : '';
+
+$tipo_textil = isset($_POST['tipo_textil'])
+    ? sanitize_text_field($_POST['tipo_textil'])
+    : '';
+
+$productos = [];
+
+if (isset($_POST['maceta'])) $productos[] = 'Maceta';
+if (isset($_POST['bloque'])) $productos[] = 'Bloque';
+if (isset($_POST['merch']))  $productos[] = 'Merch';
+if (isset($_POST['otro']))   $productos[] = 'Otro';
+
+$productos_texto = implode(', ', $productos);
+
+    
+    // 3. Configurar headers
+    $headers = array(
+        'Content-Type: text/plain; charset=UTF-8',
+        "Reply-To: $empresa <$email>"
+    );
+
+    // 4. Email para tu clienta (administradora)
+    $admin_email = 'agencia.humana25@gmail.com';  // El correo de la clienta
+
+    $subject_admin = "📩 Nuevo mensaje de cliente";
+    $body_admin = <<<EOD
+Nuevo mensaje recibido desde el formulario:
+
+Empresa: $empresa
+Rut: $rut
+Email: $email
+Dirección de retiro: $direccion
+Destrucción de identidad: $destruccion
+Volumen aproximado: $volumen
+Tipo de textil: $tipo_textil
+Productos de interés: $productos_texto
+Mensaje:
+$mensaje
+EOD;
+
+    wp_mail($admin_email, $subject_admin, $body_admin, $headers);
+
+    // 5. Email de confirmación para el usuario
+    $subject_user = "Hemos recibido tu mensaje ✔️";
+    $body_user = <<<EOD
+Hola $empresa,
+
+Gracias por contactarnos. Hemos recibido tu mensaje y te responderemos pronto.
+
+Copia de tu mensaje:
+$mensaje
+
+Saludos,
+Recicla2.
+EOD;
+
+    wp_mail($email, $subject_user, $body_user, $headers);
+
+    // 6. Redirección final
+    wp_redirect(home_url('/gracias/'));
+    exit;
+}

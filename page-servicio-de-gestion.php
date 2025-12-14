@@ -123,7 +123,10 @@ get_header();
             </div>
             <div class="row">
             <div class="col-12">
-                <form action="" method="POST">
+                <form action="<?php echo admin_url('admin-post.php'); ?>" method="POST">
+                    <input type="hidden" name="action" value="enviar_servicio">
+                <?php wp_nonce_field('form_servicio', 'nonce_servicio'); ?>
+
                 <div class="row mb-4">
                     <div class="col">
                         <label for="empresa">Empresa:</label>
@@ -136,8 +139,8 @@ get_header();
                 </div>
                 <div class="row mb-4">
                     <div class="col">
-                        <label for="email2">Email:</label>
-                        <input type="email" name="email2" id="email2" class="form-control">
+                        <label for="email_2">Email:</label>
+                        <input type="email" name="email_2" id="email_2" class="form-control">
                     </div>
                 </div>
                 <div class="row mb-4">
@@ -148,7 +151,7 @@ get_header();
                 </div>
                 <div class="row mb-4">
                     <div class="col">
-                        <fieldset>
+                        <fieldset name="destruccion_identidad" id="destruccion_identidad">
                             <legend>¿Requiere destrucción de identidad corporativa?</legend>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="destruccion_identidad" value="si" id="si" checked>
@@ -163,7 +166,7 @@ get_header();
                 </div>
                 <div class="row mb-4">
                     <div class="col">
-                        <fieldset>
+                        <fieldset name="volumen" id="volumen">
                             <legend>Volumen aprox</legend>
                             <select class="form-select" aria-label="Seleccionar volumen aproximado">
                                 <option selected>100 m3</option>
@@ -174,7 +177,7 @@ get_header();
                         </fieldset>
                     </div>
                     <div class="col">
-                        <fieldset>
+                        <fieldset name="tipo_textil" id="tipo_textil">
                             <legend>Tipo de textil</legend>
                             <select class="form-select" aria-label="Seleccionar tipo de textil">
                                 <option selected>Jeans</option>
@@ -222,8 +225,8 @@ get_header();
                 </div>
                 <div class="row mb-4">
                     <div class="col">
-                        <label for="mensaje2">Escribe tu mensaje</label>
-                    <textarea name="mensaje2" class="form-control" id="mensaje2"></textarea>
+                        <label for="mensaje_2">Escribe tu mensaje</label>
+                    <textarea name="mensaje_2" class="form-control" id="mensaje_2"></textarea>
                     </div>
                     
                 </div>
