@@ -67,8 +67,7 @@ get_header();
         <section class="game-section container">
         <h2>Nuestro trabajo con empresas</h2>
         <p>
-            Las empresas nos eligen por una solución integral: gestionamos su residuo textil con trazabilidad total y les
-            entregamos un certificado oficial que valida su compromiso ambiental ante clientes, colaboradores y la normativa vigente.
+        Trabajamos con empresas e instituciones que buscan gestionar sus residuos textiles de manera responsable, evitando que terminen en vertederos y reincorporándolos en nuevos productos. Ofrecemos retiro certificado, destrucción de identidad corporativa, transformación en productos circulares y entrega de reportes ambientales con CO2 evitado y agua ahorrada.
         </p>
 
         <!-- Swiper -->
@@ -77,8 +76,8 @@ get_header();
             <!-- Slide 1 -->
             <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(confeccion-boton.jpeg);">
                 <div class="item-desc">
-                <h3>Gasvalpo</h3>
-                <p>Revalorización de prendas institucionales con trazabilidad y reportes de impacto.</p>
+                <h3>Codelco Ventanas</h3>
+                <p>Retiro de uniformes, transformación en productos corporativos y elaboración de certificado ambiental.</p>
                 </div>
             </div>
             <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(confeccion-boton.jpeg);">
@@ -89,16 +88,22 @@ get_header();
             </div>
             <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(confeccion-boton.jpeg);">
                 <div class="item-desc">
-                <h3>Gasvalpo</h3>
-                <p>Revalorización de prendas institucionales con trazabilidad y reportes de impacto.</p>
+                <h3>KDM Industrial</h3>
+                <p>Gestión de residuos textiles industriales y desarrollo de merchandising circular.</p>
                 </div>
             </div>
             <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(confeccion-boton.jpeg);">
                 <div class="item-desc">
-                <h3>Gasvalpo</h3>
-                <p>Revalorización de prendas institucionales con trazabilidad y reportes de impacto.</p>
+                <h3>Aduanas de Chile</h3>
+                <p>Destrucción segura de identidad corporativa y elaboración de productos reutilizables.</p>
                 </div>
-            </div>   
+            </div>
+             <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(confeccion-boton.jpeg);">
+                <div class="item-desc">
+                <h3>Municipio de Viña del Mar</h3>
+                <p>Colaboración en proyectos de economía circular y educación ambiental.</p>
+                </div>
+            </div>      
         </div>
 
             <!-- Flechas y paginación -->
