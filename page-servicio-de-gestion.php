@@ -118,7 +118,7 @@ get_header();
             </div> 
         </div>
         <div class="col-6">
-            <div class="row">
+            <div class="row mb-4">
                 <h2>Formulario</h2>
             </div>
             <div class="row">
@@ -225,7 +225,7 @@ get_header();
                     <textarea name="mensaje2" class="form-control" id="mensaje2"></textarea>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="boton-enviar-sy">Enviar</button>
+                    <button type="submit" class="boton-enviar-sy">Enviar solicitud de retiro</button>
                 </div>
             </form>
             </div>  
