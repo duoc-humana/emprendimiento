@@ -109,16 +109,16 @@ get_header();
         </section>
 
     <!-- Formulario ++++++ -->
-     <div class="container-fluid esp3">
-        <div class="row">
-            <div class="col-5 ms-0 me-5 px-0 img-fondo-tex-sy d-flex justify-content-center">
-                <div class="color-fondo-sy">
-                  <h3 class="pb-3">Recuerda que:</h3>
-                    <p class="text-start">La gestión del material textil puede realizarse tanto mediante retiro coordinado por nuestro equipo como por entrega directa por parte de la empresa. Una vez recibida esta solicitud, nos pondremos en contacto para definir la modalidad más adecuada, junto con los detalles de fecha, lugar y logística según el tipo y volumen de material.</p>  
-                </div> 
-            </div>
-            <div class="col-6">
-                <form action="POST">
+<div class="container-fluid esp3">
+    <div class="row">
+        <div class="col-5 ms-0 me-5 px-0 img-fondo-tex-sy d-flex justify-content-center">
+            <div class="color-fondo-sy">
+                <h3 class="pb-3">Recuerda que:</h3>
+                <p class="text-start">La gestión del material textil puede realizarse tanto mediante retiro coordinado por nuestro equipo como por entrega directa por parte de la empresa. Una vez recibida esta solicitud, nos pondremos en contacto para definir la modalidad más adecuada, junto con los detalles de fecha, lugar y logística según el tipo y volumen de material.</p>  
+            </div> 
+        </div>
+        <div class="col-6">
+            <form action="" method="POST">
                 <div class="row mb-2">
                     <div class="col">
                         <label for="empresa">Empresa:</label>
@@ -134,30 +134,27 @@ get_header();
                         <label for="email2">Email:</label>
                         <input type="email" name="email2" id="email2" class="form-control">
                     </div>
-                    
                 </div>
                 <div class="row mb-2">
                     <div class="col">
-                       <label for="direccion">Dirección de retiro:</label>
+                        <label for="direccion">Dirección de retiro:</label>
                         <input type="text" name="direccion" id="direccion" class="form-control"> 
                     </div>
-                    
                 </div>
                 <div class="row mb-2">
                     <div class="col">
                         <fieldset>
-                        <legend>¿Requiere destrucción de identidad corporativa?</legend>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="si" value="si" id="si" checked>
-                            <label for="si" class="form-check-label">Sí</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="no" value="no" id="no">
-                            <label for="no" class="form-check-label">No</label>
-                        </div>    
+                            <legend>¿Requiere destrucción de identidad corporativa?</legend>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="destruccion_identidad" value="si" id="si" checked>
+                                <label for="si" class="form-check-label">Sí</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="destruccion_identidad" value="no" id="no">
+                                <label for="no" class="form-check-label">No</label>
+                            </div>    
                         </fieldset>
                     </div>
-                    
                 </div>
                 <div class="row mb-2">
                     <div class="col">
@@ -190,36 +187,28 @@ get_header();
                             <div class="row mb-1">
                                 <div class="col">
                                     <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="maceta" id="maceta" name="maceta">
-                                    <label class="form-check-label" for="maceta">
-                                    Maceta
-                                    </label>
+                                        <input class="form-check-input" type="checkbox" value="maceta" id="maceta" name="maceta">
+                                        <label class="form-check-label" for="maceta">Maceta</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="bloque" id="bloque" name="bloque">
-                                    <label class="form-check-label" for="bloque">
-                                    Bloque de revestimiento
-                                    </label>
+                                        <input class="form-check-input" type="checkbox" value="bloque" id="bloque" name="bloque">
+                                        <label class="form-check-label" for="bloque">Bloque de revestimiento</label>
                                     </div>
                                 </div>
                             </div>
                             <div class="row mb-1">
                                 <div class="col">
                                     <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="merch" id="merch" name="merch">
-                                    <label class="form-check-label" for="merch">
-                                    Merchandising
-                                    </label>
+                                        <input class="form-check-input" type="checkbox" value="merch" id="merch" name="merch">
+                                        <label class="form-check-label" for="merch">Merchandising</label>
                                     </div>
                                 </div>
                                 <div class="col">
                                     <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="otro" id="otro" name="otro">
-                                    <label class="form-check-label" for="otro">
-                                    Otro
-                                    </label>
+                                        <input class="form-check-input" type="checkbox" value="otro" id="otro" name="otro">
+                                        <label class="form-check-label" for="otro">Otro</label>
                                     </div>
                                 </div>
                             </div>
@@ -228,15 +217,14 @@ get_header();
                 </div>
                 <div class="row mb-2">
                     <label for="mensaje2">Escribe tu mensaje</label>
-                    <textarea name="mensaje2" class="form-control" id="mensaje2">
-                    <textarea>
+                    <textarea name="mensaje2" class="form-control" id="mensaje2"></textarea>
                 </div>
-                </form>
-                
-            </div>
-            <div class="col-1"></div>
+            </form>
         </div>
-     </div>
+        <div class="col-1"></div>
+    </div>
+</div>
+
 
        
 </main>
