@@ -108,7 +108,51 @@ get_header();
         </div>
         </section>
 
+    <!-- Formulario ++++++ -->
+     <div class="container">
+        <div class="row">
+            <div class="col-6 img-fondo-tex-sy">
+                <h3></h3>
+                <p></p>
+            </div>
+            <div class="col-6">
+                <form action="POST">
+                <div class="row">
+                    <div class="col">
 
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+                <div class="row">
+
+                </div>
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+                <div class="row">
+                    
+                </div>
+                </form>
+                
+            </div>
+        </div>
+     </div>
 
        
 </main>
