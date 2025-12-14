@@ -109,7 +109,8 @@ get_header();
         </section>
 
     <!-- Formulario ++++++ -->
-<div class="container-fluid esp3 d-flex">
+<div class="container-fluid esp3">
+    <div class="row">
         <div class="col-5 ms-0 me-5 px-0 img-fondo-tex-sy d-flex justify-content-center">
             <div class="color-fondo-sy">
                 <h3 class="pb-3">Recuerda que:</h3>
@@ -235,6 +236,7 @@ get_header();
             
         </div>
         <div class="col-1"></div>
+    </div>
 </div>
 
 
