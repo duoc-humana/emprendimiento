@@ -60,7 +60,7 @@ get_header();
                 </div>
 
                 <div class="col-lg-6 text-center mt-4 mt-lg-0">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/economia-circular.png" alt="Economía circular" class="imgeconomia">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/economia-circular.png" alt="Economía circular hola" class="imgeconomia">
                 </div>
             </div>
         </section>
