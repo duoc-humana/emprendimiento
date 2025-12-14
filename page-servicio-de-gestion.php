@@ -119,7 +119,7 @@ get_header();
         </div>
         <div class="col-6">
             <form action="" method="POST">
-                <div class="row mb-2">
+                <div class="row mb-4">
                     <div class="col">
                         <label for="empresa">Empresa:</label>
                         <input id="empresa" name="empresa" class="form-control" type="text">
@@ -129,19 +129,19 @@ get_header();
                         <input type="number" name="rut" id="rut" class="form-control">
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-4">
                     <div class="col">
                         <label for="email2">Email:</label>
                         <input type="email" name="email2" id="email2" class="form-control">
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-4">
                     <div class="col">
                         <label for="direccion">Dirección de retiro:</label>
                         <input type="text" name="direccion" id="direccion" class="form-control"> 
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-4">
                     <div class="col">
                         <fieldset>
                             <legend>¿Requiere destrucción de identidad corporativa?</legend>
@@ -156,7 +156,7 @@ get_header();
                         </fieldset>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-4">
                     <div class="col">
                         <fieldset>
                             <legend>Volumen aprox</legend>
@@ -180,11 +180,11 @@ get_header();
                         </fieldset>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-4">
                     <div class="col">
                         <fieldset>
                             <legend>Productos de interés</legend>
-                            <div class="row mb-1">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="maceta" id="maceta" name="maceta">
@@ -198,7 +198,7 @@ get_header();
                                     </div>
                                 </div>
                             </div>
-                            <div class="row mb-1">
+                            <div class="row mb-2">
                                 <div class="col">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="merch" id="merch" name="merch">
@@ -215,10 +215,11 @@ get_header();
                         </fieldset>
                     </div>
                 </div>
-                <div class="row mb-2">
+                <div class="row mb-4">
                     <label for="mensaje2">Escribe tu mensaje</label>
                     <textarea name="mensaje2" class="form-control" id="mensaje2"></textarea>
                 </div>
+                <button type="submit" class="boton-enviar-sy">Enviar</button>
             </form>
         </div>
         <div class="col-1"></div>
