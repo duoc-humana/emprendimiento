@@ -109,7 +109,7 @@ get_header();
         </section>
 
     <!-- Formulario ++++++ -->
-     <div class="container esp3">
+     <div class="container-fluid esp3">
         <div class="row">
             <div class="col-6 px-0 img-fondo-tex-sy text-center">
                 <div class="color-fondo-sy">
