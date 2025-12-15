@@ -188,7 +188,7 @@ get_header();
                             <a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="btn2" data-quantity="1" data-product_id="<?php echo esc_attr( $product->get_id() ); ?>"
                             rel="nofollow">Comprar</a>
                         </div>
-                        <div class="col-md-6 verpro">
+                        <div class="col-md-6 verprod">
                             <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="link">Ver productos</a>
                         </div>
                     </div>
