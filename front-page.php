@@ -15,10 +15,11 @@ get_header();
                 <div class="col-md-6 pos1">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img-home1.png" alt="Desfribilado de textil de jeans">
 
-                    <a href="#" class="btn1 pos2">Quiénes somos</a>
+                    <a href="<?php echo get_template_directory_uri(); ?>/page-quienes-somos.php" class="btn1 pos2">Quiénes somos</a>
 
 
-                    <a href="#" class="btn1 pos3">Cotizar</a>
+
+                    <a href="<?php echo get_template_directory_uri(); ?>/page-servicio-de-gestion.php" class="btn1 pos3">Cotizar</a>
                 </div>
             </div>
         </div>
