@@ -86,7 +86,7 @@ get_header();
                 <p>Revalorización de prendas institucionales con trazabilidad y reportes de impacto.</p>
                 </div>
             </div>
-            <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(confeccion-boton.jpeg);">
+            <div class="swiper-slide slider-trabajo-empresa" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/kdm.jpg');">
                 <div class="item-desc">
                 <h3>KDM Industrial</h3>
                 <p>Gestión de residuos textiles industriales y desarrollo de merchandising circular.</p>
@@ -98,7 +98,7 @@ get_header();
                 <p>Destrucción segura de identidad corporativa y elaboración de productos reutilizables.</p>
                 </div>
             </div>
-             <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(confeccion-boton.jpeg);">
+             <div class="swiper-slide slider-trabajo-empresa" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/econo-circular.webp');">
                 <div class="item-desc">
                 <h3>Municipio de Viña del Mar</h3>
                 <p>Colaboración en proyectos de economía circular y educación ambiental.</p>
