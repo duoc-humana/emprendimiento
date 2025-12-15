@@ -10,7 +10,7 @@ get_header();
             <div class="row align-items-center">
                 <div class="col-lg-7">
                     <div class="contendorh1">
-                        <h2 class="titulo-seccion">Reciclaje de prendas y textiles en contenedores</h2>
+                        <h1 class="titulo-seccion">Reciclaje de prendas y textiles en contenedores</h1>
                     </div>
                     <p class="descripcion">
                         Instalamos contenedores para acopio seguro de textiles en empresas, municipios o instituciones.

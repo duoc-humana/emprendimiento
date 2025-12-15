@@ -13,10 +13,10 @@ get_header();
 
                     <!-- Texto -->
                     <div class="col-lg-6 col-md-6">
-                        <h2 class="titulo-seccion">
+                        <h1 class="titulo-seccion">
                             Gestión de residuos textiles<br>
                             para empresas
-                        </h2>
+                        </h1>
 
                         <p class="parrafo-seccion mt-5">
                             Ofrecemos un servicio integral de gestión de residuos textiles con trazabilidad
@@ -64,7 +64,7 @@ get_header();
                 </div>
             </div>
         </section>
-        <section class="game-section container">
+        <section class="game-section container esp3">
         <h2>Nuestro trabajo con empresas</h2>
         <p>
         Trabajamos con empresas e instituciones que buscan gestionar sus residuos textiles de manera responsable, evitando que terminen en vertederos y reincorporándolos en nuevos productos. Ofrecemos retiro certificado, destrucción de identidad corporativa, transformación en productos circulares y entrega de reportes ambientales con CO2 evitado y agua ahorrada.
