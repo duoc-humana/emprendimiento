@@ -74,7 +74,7 @@ get_header();
         <div class="swiper swiper-empresas">
             <div class="swiper-wrapper">
             <!-- Slide 1 -->
-            <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(confeccion-boton.jpeg);">
+            <div class="swiper-slide slider-trabajo-empresa" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/codelco-trabajos.png');">
                 <div class="item-desc">
                 <h3>Codelco Ventanas</h3>
                 <p>Retiro de uniformes, transformación en productos corporativos y elaboración de certificado ambiental.</p>
@@ -92,7 +92,7 @@ get_header();
                 <p>Gestión de residuos textiles industriales y desarrollo de merchandising circular.</p>
                 </div>
             </div>
-            <div class="swiper-slide slider-trabajo-empresa" style="background-image: url(confeccion-boton.jpeg);">
+            <div class="swiper-slide slider-trabajo-empresa" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/aduana.jpeg');">
                 <div class="item-desc">
                 <h3>Aduanas de Chile</h3>
                 <p>Destrucción segura de identidad corporativa y elaboración de productos reutilizables.</p>
