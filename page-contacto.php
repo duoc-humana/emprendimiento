@@ -8,7 +8,7 @@ Template Name: Página de Contacto
 get_header();
 ?>
 
-<div class="container">
+<div class="container py-5 contacto-wrapper">
     <div class="row">
         <div class="col">
             <a class="links-sy" href="<?php echo home_url(); ?>">Ir al home</a>
