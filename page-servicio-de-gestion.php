@@ -116,8 +116,8 @@ get_header();
     <!-- Formulario ++++++ -->
 <div class="container-fluid esp3">
     <div class="row">
-        <div class="col-12 col-lg-6 responsive ms-0 me-5 px-0 img-fondo-tex-sy d-flex justify-content-center">
-            <div class="color-fondo-sy">
+        <div class="col-12 col-lg-6 responsive1 ms-0 me-5 px-0 img-fondo-tex-sy d-flex justify-content-center">
+            <div class="color-fondo-sy responsive2">
                 <h3 class="pb-3">Recuerda que:</h3>
                 <p class="text-start">La gestión del material textil puede realizarse tanto mediante retiro coordinado por nuestro equipo como por entrega directa por parte de la empresa. Una vez recibida esta solicitud, nos pondremos en contacto para definir la modalidad más adecuada, junto con los detalles de fecha, lugar y logística según el tipo y volumen de material.</p>  
             </div> 
