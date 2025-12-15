@@ -13,7 +13,7 @@ get_header();
 
                     <!-- Texto -->
                     <div class="col-lg-6 col-md-6">
-                        <h1 class="titulo-seccion">
+                        <h1>
                             Gestión de residuos textiles<br>
                             para empresas
                         </h1>
