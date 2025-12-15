@@ -8,13 +8,13 @@ Template Name: Página de Contacto
 get_header();
 ?>
 
-<div class="container py-5 contacto-wrapper">
+<div class="container pt-5 contacto-wrapper">
     <div class="row">
         <div class="col">
             <a class="links-sy" href="<?php echo home_url(); ?>">Ir al home</a>
         </div> 
     </div>
-    <div class="row g-5 my-5">
+    <div class="row g-5 mt-5">
         <div class="col-12 col-lg-5 order-2 order-lg-1">
 
             <div class="info-card text-center p-4 mb-4">
@@ -66,7 +66,7 @@ get_header();
                         <label for="mensaje">Escribe tu mensaje</label>
                         <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
                     </div>
-                    <div class="col-12 d-flex justify-content-end mb-5 mt-3">
+                    <div class="col-12 d-flex justify-content-end mt-3">
                         <button type="submit" class="boton-enviar-sy">Enviar</button>
                     </div> 
                 </div>    
