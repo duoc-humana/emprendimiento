@@ -8,95 +8,99 @@ Template Name: Página de Contacto
 get_header();
 ?>
 
-<div class="container py-4">
-
+<div class="container">
     <div class="row">
-        <div class="col-12">
-            <a class="links-sy" href="<?php echo home_url(); ?>">Ir al home</a>
-        </div>
+        <a class="links-sy" href="<?php echo home_url(); ?>">Ir al home</a>
     </div>
-
     <div class="row my-5">
-
-        <!-- COLUMNA IZQUIERDA -->
-        <div class="col-12 col-md-6">
-
-            <!-- Bloque de icono -->
-            <div class="d-flex align-items-center my-4">
-                <img class="img-iconos-sy img-fluid w-25 me-3"
-                    src="<?php echo get_template_directory_uri(); ?>/assets/img/icono-ubicacion.png" alt="">
-                <p class="mb-0">Dirección</p>
+        <div class="col-6">
+            <div class="row my-5 caja-iconos-sy d-flex justify-content-center">
+                <div class="col-2">
+                <img class="img-iconos-sy" src="<?php echo get_template_directory_uri(); ?>/assets/img/icono-ubicacion.png" alt="">
+                </div>
+                <div class="row my-2">
+                    <div class="col-12">
+                        <p class="text-center">Dirección</p>
+                    </div>  
+                </div>
             </div>
-
-            <div class="d-flex align-items-center my-4">
-                <img class="img-iconos-sy img-fluid w-25 me-3"
-                    src="<?php echo get_template_directory_uri(); ?>/assets/img/icono-telefono.png" alt="">
-                <p class="mb-0">+56 9 00000000</p>
+            <div class="row my-5 caja-iconos-sy d-flex justify-content-center">
+                <div class="col-2">
+                <img class="img-iconos-sy" src="<?php echo get_template_directory_uri(); ?>/assets/img/icono-telefono.png" alt="">
+                </div>
+                <div class="row my-2">
+                    <div class="col-12">
+                        <p class="text-center">+56 9 00000000</p>
+                    </div>  
+                </div>
             </div>
-
-            <div class="d-flex align-items-center my-4">
-                <img class="img-iconos-sy img-fluid w-25 me-3"
-                    src="<?php echo get_template_directory_uri(); ?>/assets/img/icono-mail.png" alt="">
-                <a class="links-sy" href="mailto:consuelo.miranda@gmail.com">consuelo.miranda@gmail.com</a>
+            <div class="row my-5 caja-iconos-sy d-flex justify-content-center">
+                <div class="col-2">
+                <img class="img-iconos-sy" src="<?php echo get_template_directory_uri(); ?>/assets/img/icono-mail.png" alt="">
+                </div>
+                <div class="row my-2">
+                    <div class="col-12 d-flex justify-content-center">
+                        <a class="links-sy" href="mailto:consuelo.miranda@gmail.com">consuelo.miranda@gmail.com</a>
+                    </div>  
+                </div>
             </div>
-
         </div>
+        <div class="col-6">
+            <div class="row">
+                <h1>Formulario de contacto</h1>
+            </div>
+            <div class="row">
+                <p class="py-3">No dudes en comunicarte con el equipo Recicla2, estaremos felices de resolver cualquier duda que tengas sobre nuestros productos, procesos y proyectos especiales</p>
+                <ul class="ps-5">
+                    <li class="fw-light">Diferentes medios de pago</li>
+                    <li class="fw-light">Plazo de respuesta de 1 a 3 días hábiles.</li>
+                </ul>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12">
+                    <form action="<?php echo admin_url('admin-post.php'); ?>" method="POST">
+                    <input type="hidden" name="action" value="enviar_contacto">
 
-        <!-- COLUMNA DERECHA -->
-        <div class="col-12 col-md-6">
-
-            <h1>Formulario de contacto</h1>
-
-            <p class="py-3">
-                No dudes en comunicarte con el equipo Recicla2, estaremos felices de resolver cualquier duda que tengas
-                sobre nuestros productos, procesos y proyectos especiales
-            </p>
-
-            <ul class="ps-4">
-                <li class="fw-light">Diferentes medios de pago</li>
-                <li class="fw-light">Plazo de respuesta de 1 a 3 días hábiles.</li>
-            </ul>
-
-            <form action="<?php echo admin_url('admin-post.php'); ?>" method="POST" class="mt-4">
-                <input type="hidden" name="action" value="enviar_contacto">
-                <?php wp_nonce_field('form_contacto', 'nonce_contacto'); ?>
-
-                <div class="row g-3">
-                    <div class="col-md-6">
+                    <?php wp_nonce_field('form_contacto', 'nonce_contacto'); ?>
+                    
+                    <div class="row my-3">
+                    <div class="col">
                         <label for="nombre">Nombre y Apellido</label>
-                        <input id="nombre" name="nombre" class="form-control" type="text">
+                        <input id="nombre" name="nombre" class="form-control" type="text">  
                     </div>
-
-                    <div class="col-md-6">
+                    <div class="col">
                         <label for="telefono">Teléfono</label>
                         <input type="tel" class="form-control" name="telefono" id="telefono">
                     </div>
-
-                    <div class="col-12">
-                        <label for="mail">Correo electrónico</label>
-                        <input type="email" class="form-control" name="email" id="mail">
                     </div>
-
-                    <div class="col-12">
-                        <label for="asunto">Asunto</label>
-                        <input name="asunto" id="asunto" class="form-control" type="text">
+                    <div class="row my-3">
+                        <div class="col">
+                            <label for="mail">Correo electrónico</label>
+                            <input type="email" class="form-control" name="email" id="mail">
+                        </div>
                     </div>
-
-                    <div class="col-12">
-                        <label for="mensaje">Escribe tu mensaje</label>
-                        <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
+                    <div class="row my-3">
+                        <div class="col">
+                            <label for="asunto">Asunto</label>
+                            <input name="asunto" id="asunto" class="form-control" type="text">
+                        </div>
                     </div>
-
-                    <div class="col-12 d-flex justify-content-end">
+                    <div class="row my-3">
+                        <div class="col">
+                            <label for="mensaje">Escribe tu mensaje</label>
+                            <textarea name="mensaje" class="form-control" id="mensaje"></textarea>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
                         <button type="submit" class="boton-enviar-sy">Enviar</button>
-                    </div>
+                    </div>     
+                </form>
                 </div>
-            </form>
-
+                
+            </div>
         </div>
     </div>
 </div>
-
 
 <?php
 get_footer();
