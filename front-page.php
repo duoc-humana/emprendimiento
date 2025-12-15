@@ -189,7 +189,7 @@ get_header();
                             rel="nofollow">Comprar</a>
                         </div>
                         <div class="col-md-6 verprod">
-                            <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="link">Ver productos</a>
+                            <a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="links-sy">Ver productos</a>
                         </div>
                     </div>
                 </div>
