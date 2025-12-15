@@ -184,7 +184,7 @@ get_header();
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 compprd">
                             <a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>" class="btn2" data-quantity="1" data-product_id="<?php echo esc_attr( $product->get_id() ); ?>"
                             rel="nofollow">Comprar</a>
                         </div>
