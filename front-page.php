@@ -17,7 +17,7 @@ get_header();
 
                     <a href="<?php echo home_url('/quienes-somos'); ?>" class="btn1 pos2">Quiénes somos</a>
 
-                    <a href="<?php echo get_template_directory_uri(); ?>/page-servicio-de-gestion.php" class="btn1 pos3">Cotizar</a>
+                    <a href="<?php echo home_url('/servicio-de-gestion'); ?>" class="btn1 pos3">Cotizar</a>
                 </div>
             </div>
         </div>
