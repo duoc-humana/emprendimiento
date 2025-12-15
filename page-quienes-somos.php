@@ -56,7 +56,7 @@ get_header();
         <div class="tabs-selectors">
             <div class="selector active" data-tab="tab1">Proposito de Recicla2</div>
             <div class="selector" data-tab="tab2">Nuestra Historia</div>
-            <div class="selector" data-tab="tab3">innovación del Proyecto</div>
+            <div class="selector" data-tab="tab3">Innovación del Proyecto</div>
         </div>
     </div>
     
