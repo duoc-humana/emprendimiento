@@ -32,10 +32,10 @@ get_header();
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/pantalonesicono.svg" class="icono-tipo" alt="">
                         <div class="texto-inline">
                             <ul>
-                            <li>Jeans</li>
-                            <li>Pantalones de tela</li>
-                            <li>Shorts</li>
-                            <li>Buzos</li>
+                            <li class="texto-circulo">Jeans</li>
+                            <li class="texto-circulo">Pantalones de tela</li>
+                            <li class="texto-circulo">Shorts</li>
+                            <li class="texto-circulo">Buzos</li>
                             </ul>
                         </div>
                     </div>
@@ -47,10 +47,10 @@ get_header();
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/t-shirt_5693.png" class="icono-tipo" alt="">
                         <div class="texto-inline">
                             <ul>
-                            <li>Deportivas</li>
-                            <li>Blusas y camisas</li>
-                            <li>Algodón</li>
-                            <li>Estampadas</li>
+                            <li class="texto-circulo">Deportivas</li>
+                            <li class="texto-circulo">Blusas y camisas</li>
+                            <li class="texto-circulo">Algodón</li>
+                            <li class="texto-circulo">Estampadas</li>
                             </ul>
                         </div>
                     </div>
@@ -61,10 +61,10 @@ get_header();
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/sweater_78200.svg" class="icono-tipo" alt="">
                         <div class="texto-inline">
                             <ul>
-                            <li>Canguros</li>
-                            <li>Polerón con cierre</li>
-                            <li>Polerón clásico</li>
-                            <li>Crewneck</li>
+                            <li class="texto-circulo">Canguros</li>
+                            <li class="texto-circulo">Polerón con cierre</li>
+                            <li class="texto-circulo">Polerón clásico</li>
+                            <li class="texto-circulo">Crewneck</li>
                             </ul>
                         </div>
                     </div>
@@ -75,10 +75,10 @@ get_header();
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mens-sleeveless-jacket_78087.svg" class="icono-tipo chaleco" alt="">
                         <div class="texto-inline">
                             <ul>
-                            <li>Vest deportivo</li>
-                            <li>Cortavientos</li>
-                            <li>Chaqueta de jeans</li>
-                            <li>Chaqueta de tela</li>
+                            <li class="texto-circulo">Vest deportivo</li>
+                            <li class="texto-circulo">Cortavientos</li>
+                            <li class="texto-circulo">Chaqueta de jeans</li>
+                            <li class="texto-circulo">Chaqueta de tela</li>
                             </ul>
                         </div>
                     </div>
