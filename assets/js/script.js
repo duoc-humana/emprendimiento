@@ -1,4 +1,5 @@
 //Links Activos
+console.log("script funcionando");
 document.addEventListener('DOMContentLoaded', () => {
     let links = document.querySelectorAll("current-menu-item")
     const currentPath = window.location.pathname;
