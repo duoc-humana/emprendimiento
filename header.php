@@ -53,9 +53,9 @@
                 wp_nav_menu(array(
                     'theme_location' => 'menu-principal',
                     'container'      => false,
-                    'menu_class'     => 'navbar-nav ms-auto gap-2',
+                    'menu_class'     => '',
                     'fallback_cb'    => '__return_false',
-                    'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                    'items_wrap'     => '<ul id="%1$s" class="navbar-nav ms-auto gap-2 %2$s">%3$s</ul>',
                     'depth'          => 2,
                     'walker'         => new bootstrap_5_wp_nav_menu_walker()
                 ));
