@@ -54,8 +54,8 @@ get_header();
                     </ul>
 
                     <div class="d-flex gap-4 botonoesinfos">
-                        <a class="btn btn-contactar" href="#">Contactar</a>
-                        <a class="link-ver-productos" href="#">Ver Productos</a>
+                        <a class="btn btn-contactar" href="<?php echo home_url('/contacto'); ?>">Contactar</a>
+                        <a class="link-ver-productos" href="<?php echo home_url('/tienda'); ?>">Ver Productos</a>
                     </div>
                 </div>
 
