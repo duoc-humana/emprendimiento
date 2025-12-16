@@ -1,10 +1,5 @@
-jQuery(document).ready(function($) {
-  let paginaActual = window.location.pathname.split("/").pop();
-  $('.nav-link').each(function () {
-    if ($(this).attr('href') === paginaActual) {
-      $(this).addClass('link-activo');
-    }})
-})
+//Links Activos
+console.log("script funcionando");
 
 const searchContainers = document.querySelectorAll('.search-container');
 
