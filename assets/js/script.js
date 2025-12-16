@@ -1,17 +1,12 @@
 //Links Activos
 console.log("script funcionando");
 document.addEventListener('DOMContentLoaded', () => {
-    let links = document.querySelectorAll("current-menu-item")
-    const currentPath = window.location.pathname;
-
-    links.forEach(link => {
-        const linkPath = new URL(link.href).pathname;
-
-        if (linkPath === currentPath) {
-            link.classList.add('link-activo');
-        }
-    });
-});
+    let links = document.querySelector("current-menu-item")
+   links.style.backgroundColor = "#26364D";
+   links.style.color = "#ffffff";
+   links.style.padding = "10 px 6px";
+   links.style.borderRadius = "6px";
+   })
 
 const searchContainers = document.querySelectorAll('.search-container');
 
