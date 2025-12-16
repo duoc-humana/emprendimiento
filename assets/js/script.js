@@ -1,4 +1,4 @@
-//Links Activos
+/* //Links Activos
 console.log("script funcionando");
 document.addEventListener("DOMContentLoaded", function () {
   // Obtiene el nombre de la página actual
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
       link.classList.add("link-activo");
     }
   });
-});
+}); */
 
 const searchContainers = document.querySelectorAll('.search-container');
 
