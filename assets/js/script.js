@@ -1,5 +1,19 @@
 //Links Activos
 console.log("script funcionando");
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtiene el nombre de la página actual
+  let paginaActual = window.location.pathname.split("/").pop();
+
+  // Selecciona todos los enlaces con la clase .nav-link
+  let links = document.querySelectorAll(".navbar-nav");
+
+  // Recorre cada enlace
+  links.forEach(function (link) {
+    if (link.getAttribute("href") === paginaActual) {
+      link.classList.add("link-activo");
+    }
+  });
+});
 
 const searchContainers = document.querySelectorAll('.search-container');
 
